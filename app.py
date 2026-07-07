@@ -138,9 +138,10 @@ def _init():
     ss = st.session_state
     ss.setdefault("store", get_store())
     ss.setdefault("state", None)
-    if not ss.get("_generated_loaded"):
-        data_loader.load_generated()  # make cached AI drugs + cases available
-        ss["_generated_loaded"] = True
+    # Guarded inside data_loader (alongside the registry) so it reloads if a
+    # hot-reload wipes module globals — not tracked in session_state, which
+    # would survive the reload and wrongly skip repopulation.
+    data_loader.ensure_generated_loaded()  # cached AI drugs + cases
 
 
 _init()
@@ -320,9 +321,10 @@ with left:
         if cv is True:
             gen_tag += "<span class='tag ok' title='Guideline citation URL resolves'>citation verified</span> "
         elif cv is False:
-            bad = html.escape(_disease.get("guideline", {}).get("unverified_url", "the model's URL"))
-            gen_tag += (f"<span class='tag miss' title='Model cited {bad} which did not resolve; "
-                        f"replaced with a literature search'>citation unverified</span> ")
+            # Note: never render the model's raw URL here — its slug can spell out
+            # the diagnosis and leak the answer mid-case.
+            gen_tag += ("<span class='tag miss' title='The model-cited guideline URL did not "
+                        "resolve and was replaced with a literature search'>citation unverified</span> ")
     sev = _disease.get("severity")
     sev_tag = ""
     if sev:

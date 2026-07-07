@@ -31,7 +31,9 @@ def evaluate_surgery(
             if success else
             "Procedure was indicated but complicated by a peri-operative event; the patient recovers with support."
         )
-        rationale = f"{procedure} is guideline-indicated for {disease.get('name')}."
+        # Rationale must not name the diagnosis nor reveal which procedure *was*
+        # indicated — both would give the case away mid-work-up.
+        rationale = f"{procedure} is guideline-indicated for this presentation."
     else:
         success_probability = 0.15
         success = False
@@ -39,10 +41,9 @@ def evaluate_surgery(
             outcome = (f"{procedure} is not indicated for this presentation. "
                        f"An unnecessary operation exposes the patient to avoidable surgical risk.")
         else:
-            outcome = (f"This condition is managed medically. {procedure} is not indicated "
+            outcome = (f"This presentation is managed medically. {procedure} is not indicated "
                        f"and would be harmful.")
-        rationale = (f"{procedure} is not among the indicated procedures "
-                     f"({', '.join(indicated_list) or 'none'}) for {disease.get('name')}.")
+        rationale = f"{procedure} is not indicated for this presentation."
 
     citation = disease.get("guideline", {}).get("url")
     return {

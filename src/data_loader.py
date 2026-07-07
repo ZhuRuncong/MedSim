@@ -311,3 +311,22 @@ def load_generated_drugs() -> int:
 def load_generated() -> dict:
     """Load cached generated drugs (first, so cases can reference them) + cases."""
     return {"drugs": load_generated_drugs(), "cases": load_generated_cases()}
+
+
+_GENERATED_LOADED = False
+
+
+def ensure_generated_loaded(force: bool = False) -> dict:
+    """Populate the registry from the on-disk generated cache once per process.
+
+    The guard lives here — alongside the registry it protects — so that if the
+    module is re-imported (e.g. a Streamlit hot-reload wiping ``_REGISTRY``) the
+    flag resets too and the cases reload. ``force=True`` reloads unconditionally,
+    used as a self-heal when a lookup misses a case that is still on disk.
+    """
+    global _GENERATED_LOADED
+    if _GENERATED_LOADED and not force:
+        return {"drugs": 0, "cases": 0}
+    result = load_generated()
+    _GENERATED_LOADED = True
+    return result

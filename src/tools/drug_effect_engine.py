@@ -54,11 +54,13 @@ def evaluate_drug(
     contraindication_flag = category in ("allergen", "contraindicated")
     has_major_interaction = any(i.get("severity") == "major" for i in interactions)
 
+    # Rationales must never name the diagnosis — the student is still working it
+    # out. Describe the drug's role relative to "this presentation" instead.
     rationale_map = {
-        "first_line": f"{drug} is a guideline first-line agent for {disease.get('name')}.",
-        "reasonable": f"{drug} is a reasonable adjunct/alternative for {disease.get('name')}.",
-        "neutral": f"{drug} is not indicated for {disease.get('name')} and offers no benefit here.",
-        "contraindicated": f"{drug} is contraindicated in {disease.get('name')}.",
+        "first_line": f"{drug} is a guideline first-line agent for this presentation.",
+        "reasonable": f"{drug} is a reasonable adjunct or alternative here.",
+        "neutral": f"{drug} is not indicated for this presentation and offers no benefit here.",
+        "contraindicated": f"{drug} is contraindicated for this patient.",
         "allergen": (allergy or {}).get("description", f"{drug} conflicts with a patient allergy."),
     }
 
@@ -66,7 +68,8 @@ def evaluate_drug(
     g = disease.get("guideline", {}).get("url")
     if g:
         citations.append(g)
-    citations.append(_PUBMED + drug.replace(" ", "+") + "+" + disease.get("name", "").replace(" ", "+"))
+    # Drug-only query — including the diagnosis in the URL would leak the answer.
+    citations.append(_PUBMED + drug.replace(" ", "+") + "+treatment+guideline")
 
     return {
         "drug": drug,

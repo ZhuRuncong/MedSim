@@ -403,6 +403,10 @@ def _gen_user(specialty: str, difficulty: Optional[int],
         "(not merely 'not indicated'); [] if none apply.",
         "- 'appropriate_tests' are the tests a clinician would actually order in the work-up.",
         "- 'lab_deviations' encode this disease's characteristic abnormal results.",
+        "- IMPORTANT: 'exam_findings' and 'lab_deviations' findings must describe the objective "
+        "sign or result ONLY and must NOT name the diagnosis or its abbreviation (the student is "
+        "still working it out). Write 'ST-segment elevation in the inferior leads', not "
+        "'ECG consistent with STEMI'; 'right lower quadrant guarding', not 'signs of appendicitis'.",
         "- 'symptoms' each need a frequency of common | occasional | rare.",
         f"- 'history' is a dict of short first-person patient answers keyed by topic ({history_keys}).",
         "- 'exam_findings' maps an allowed exam name to what is found.",

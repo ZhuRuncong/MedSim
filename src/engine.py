@@ -16,7 +16,7 @@ from .agents import patient, supervisor
 from .config import level_for_points
 from .state import GameState, Message
 from .store import SessionStore
-from .util import case_rng
+from .util import case_rng, redact_citation, redact_diagnosis
 
 
 # --------------------------------------------------------------------------- #
@@ -68,6 +68,9 @@ def create_case(
     """
     if disease_id is not None:
         disease = data_loader.get_disease(disease_id)
+        if disease is None:  # self-heal from the on-disk generated cache (see perform_action)
+            data_loader.ensure_generated_loaded(force=True)
+            disease = data_loader.get_disease(disease_id)
         if disease is None:
             raise ValueError(f"Unknown disease_id '{disease_id}'.")
     else:
@@ -96,6 +99,10 @@ def create_case(
 
     rng = case_rng(case_id)
     intro = patient.intake(state, disease, rng)
+    # Never let the intake copy or chief complaint name the hidden diagnosis.
+    state.chief_complaint = redact_diagnosis(state.chief_complaint, disease)
+    for m in intro:
+        m.text = redact_diagnosis(m.text, disease)
     state.feed.extend(intro)
 
     if store is not None:
@@ -165,12 +172,26 @@ def perform_action(
     """
     disease = data_loader.get_disease(state.disease_id)
     if disease is None:
+        # Self-heal: the in-memory registry can be cleared (Streamlit hot-reload,
+        # a fresh process) while a persisted session still points at a generated
+        # case. Reload the on-disk generated cache and retry before giving up.
+        data_loader.ensure_generated_loaded(force=True)
+        disease = data_loader.get_disease(state.disease_id)
+    if disease is None:
         raise ValueError(f"Case references unknown disease '{state.disease_id}'.")
 
     rng = case_rng(state.case_id, "action", state.turn)
     with trace_mod.record(state, action) as ev:
         messages = _route(state, disease, action, rng)
         ev.llm_used = any(m.llm for m in messages)
+
+    # Leak guard: while the case is still open, no feedback may name the hidden
+    # diagnosis (drug/surgery rationales, lab findings, knowledge answers, …).
+    # Once the case closes (correct dx or retries exhausted) the reveal is allowed.
+    if state.status == "active":
+        for m in messages:
+            m.text = redact_diagnosis(m.text, disease)
+            m.citations = [redact_citation(c, disease) for c in m.citations]
 
     # End-of-case debrief (fires once, the moment the case closes).
     if state.status in ("complete", "failed") and state.debrief is None:
