@@ -1,0 +1,584 @@
+{
+  "_meta": {
+    "note": "Educational, synthetic-but-plausible case catalog for a training simulator. NOT a clinical reference. IDs are UMLS-style CUIs for realism only. Every case carries a real guideline citation for traceability.",
+    "schema_version": 1
+  },
+  "diseases": [
+    {
+      "id": "C0032285",
+      "name": "Community-Acquired Pneumonia",
+      "aliases": ["pneumonia", "cap", "lung infection", "lobar pneumonia", "chest infection"],
+      "specialties": ["Internal Medicine", "Emergency"],
+      "difficulty": 1,
+      "chief_complaint": "Cough, fever and shortness of breath for 3 days",
+      "demographics": {"age_range": [50, 82], "sex": "any"},
+      "vitals": {"HR": 104, "SBP": 118, "DBP": 74, "RR": 24, "Temp": 38.7, "SpO2": 91},
+      "symptoms": [
+        {"name": "productive cough with green sputum", "frequency": "common"},
+        {"name": "fever and chills", "frequency": "common"},
+        {"name": "shortness of breath", "frequency": "common"},
+        {"name": "pleuritic chest pain", "frequency": "occasional"},
+        {"name": "fatigue and malaise", "frequency": "common"},
+        {"name": "confusion", "frequency": "rare"}
+      ],
+      "history": {
+        "onset": "It started about three days ago and it's been getting worse.",
+        "cough": "Yes, a bad cough bringing up thick greenish-yellow phlegm.",
+        "fever": "I've been running a fever and getting the shakes and chills.",
+        "chest pain": "It hurts on the right side when I take a deep breath or cough.",
+        "breathing": "I get winded just walking to the bathroom.",
+        "smoking": "I've smoked about a pack a day for thirty years.",
+        "travel": "No recent travel.",
+        "sick contacts": "My grandson had a cold last week."
+      },
+      "exam_findings": {
+        "General inspection": "Ill-appearing, breathing fast, using accessory muscles.",
+        "Auscultate lungs": "Crackles and bronchial breath sounds over the right lower lung field, with dullness to percussion.",
+        "Auscultate heart": "Tachycardic, regular rhythm, no murmurs.",
+        "Inspect skin": "Warm, diaphoretic, no rash.",
+        "Examine throat": "Mildly dry mucous membranes, no exudate."
+      },
+      "appropriate_tests": ["CBC", "BMP", "CRP", "Chest X-ray", "Blood Culture", "Sputum Culture", "ABG", "Lactate"],
+      "appropriate_exams": ["Auscultate lungs", "General inspection", "Auscultate heart"],
+      "lab_deviations": {
+        "WBC": {"value": 15.4},
+        "Neutrophils %": {"value": 86},
+        "CRP": {"value": 128},
+        "Lactate": {"value": 2.4},
+        "Chest X-ray": {"finding": "Right lower lobe consolidation with air bronchograms; no effusion."},
+        "Sputum Culture": {"finding": "Gram-positive diplococci; culture pending (likely S. pneumoniae)."},
+        "Blood Culture": {"finding": "Pending; no growth at 24h."}
+      },
+      "first_line_drugs": ["Amoxicillin", "Azithromycin", "Ceftriaxone", "Doxycycline"],
+      "reasonable_drugs": ["Levofloxacin"],
+      "contraindicated_drugs": [],
+      "indicated_surgeries": [],
+      "differentials": ["Acute Bronchitis", "Pulmonary Embolism", "Congestive Heart Failure", "Tuberculosis"],
+      "teaching": "CURB-65 guides admission. Empiric therapy per IDSA/ATS: amoxicillin or a macrolide for outpatients; add coverage for comorbidities.",
+      "guideline": {"name": "IDSA/ATS CAP Guideline 2019", "url": "https://doi.org/10.1164/rccm.201908-1581ST"}
+    },
+    {
+      "id": "C0155626",
+      "name": "Acute Myocardial Infarction",
+      "aliases": ["heart attack", "myocardial infarction", "mi", "stemi", "acute coronary syndrome", "acs"],
+      "specialties": ["Emergency", "Internal Medicine"],
+      "difficulty": 2,
+      "chief_complaint": "Crushing chest pressure radiating to the left arm for 45 minutes",
+      "demographics": {"age_range": [55, 78], "sex": "any"},
+      "vitals": {"HR": 98, "SBP": 148, "DBP": 92, "RR": 20, "Temp": 36.9, "SpO2": 96},
+      "symptoms": [
+        {"name": "crushing substernal chest pressure", "frequency": "common"},
+        {"name": "pain radiating to left arm and jaw", "frequency": "common"},
+        {"name": "diaphoresis", "frequency": "common"},
+        {"name": "nausea", "frequency": "occasional"},
+        {"name": "shortness of breath", "frequency": "occasional"},
+        {"name": "impending sense of doom", "frequency": "rare"}
+      ],
+      "history": {
+        "onset": "The pain hit suddenly about 45 minutes ago while I was mowing the lawn.",
+        "chest pain": "It's a heavy crushing pressure right in the center of my chest.",
+        "radiation": "It shoots down my left arm and up into my jaw.",
+        "breathing": "I'm a bit short of breath and sweating buckets.",
+        "smoking": "Yes, I smoke and my father died of a heart attack at 60.",
+        "medications": "I take a pill for blood pressure but I forget the name.",
+        "exertion": "It came on with exertion and hasn't let up with rest."
+      },
+      "exam_findings": {
+        "General inspection": "Anxious, pale, diaphoretic, clutching chest.",
+        "Auscultate heart": "Tachycardic; a soft S4 gallop is present, no murmur.",
+        "Auscultate lungs": "Clear bilaterally, no crackles.",
+        "Check extremities/edema": "No peripheral edema; pulses symmetric.",
+        "Inspect skin": "Cool and clammy."
+      },
+      "appropriate_tests": ["ECG", "Troponin", "CBC", "BMP", "Chest X-ray", "BNP", "Lipid Panel"],
+      "appropriate_exams": ["Auscultate heart", "General inspection", "Auscultate lungs"],
+      "lab_deviations": {
+        "Troponin I": {"value": 3.8},
+        "ECG": {"finding": "ST-segment elevation in leads II, III, aVF consistent with an inferior STEMI."},
+        "Chest X-ray": {"finding": "No acute cardiopulmonary process; no widened mediastinum."}
+      },
+      "first_line_drugs": ["Aspirin", "Ticagrelor", "Clopidogrel", "Atorvastatin", "Heparin", "Nitroglycerin", "Metoprolol"],
+      "reasonable_drugs": ["Morphine"],
+      "contraindicated_drugs": ["Ibuprofen", "Sildenafil"],
+      "indicated_surgeries": ["Percutaneous Coronary Intervention"],
+      "differentials": ["Unstable Angina", "Aortic Dissection", "Pericarditis", "Pulmonary Embolism", "GERD"],
+      "teaching": "Time is muscle. MONA-B plus dual antiplatelet and anticoagulation; door-to-balloon <90 min for STEMI. Avoid NSAIDs and PDE5 inhibitors.",
+      "guideline": {"name": "ACC/AHA STEMI Guideline 2013", "url": "https://doi.org/10.1161/CIR.0b013e3182742cf6"}
+    },
+    {
+      "id": "C0003615",
+      "name": "Acute Appendicitis",
+      "aliases": ["appendicitis", "acute appendicitis", "appendix"],
+      "specialties": ["Surgery", "Emergency"],
+      "difficulty": 1,
+      "chief_complaint": "Belly pain that moved to the lower right side, with nausea",
+      "demographics": {"age_range": [14, 35], "sex": "any"},
+      "vitals": {"HR": 100, "SBP": 122, "DBP": 78, "RR": 18, "Temp": 38.1, "SpO2": 99},
+      "symptoms": [
+        {"name": "periumbilical pain migrating to right lower quadrant", "frequency": "common"},
+        {"name": "anorexia", "frequency": "common"},
+        {"name": "nausea and vomiting", "frequency": "common"},
+        {"name": "low-grade fever", "frequency": "occasional"},
+        {"name": "pain worse with movement", "frequency": "common"}
+      ],
+      "history": {
+        "onset": "It started around my belly button yesterday and moved to the lower right.",
+        "abdominal pain": "It's a constant ache in the right lower belly, worse if I cough or move.",
+        "appetite": "I have no appetite at all, and I threw up once.",
+        "fever": "I feel a bit feverish.",
+        "bowel": "No diarrhea; last bowel movement was normal.",
+        "menstrual": "My last period was two weeks ago and normal."
+      },
+      "exam_findings": {
+        "General inspection": "Uncomfortable, lying still, reluctant to move.",
+        "Palpate abdomen": "Tenderness and guarding at McBurney's point with rebound; positive Rovsing and psoas signs.",
+        "Auscultate lungs": "Clear bilaterally.",
+        "Examine throat": "Unremarkable."
+      },
+      "appropriate_tests": ["CBC", "BMP", "CRP", "Urinalysis", "Beta-hCG", "CT Abdomen/Pelvis", "Abdominal Ultrasound"],
+      "appropriate_exams": ["Palpate abdomen", "General inspection"],
+      "lab_deviations": {
+        "WBC": {"value": 14.2},
+        "Neutrophils %": {"value": 82},
+        "CRP": {"value": 48},
+        "CT Abdomen/Pelvis": {"finding": "Dilated appendix (11 mm) with wall thickening and periappendiceal fat stranding; no free air."},
+        "Beta-hCG": {"value": 0},
+        "Urinalysis": {"finding": "Trace leukocytes, no nitrites, no blood."}
+      },
+      "first_line_drugs": ["Ceftriaxone", "Metronidazole", "Piperacillin-Tazobactam", "Cefoxitin"],
+      "reasonable_drugs": ["Ondansetron", "Morphine"],
+      "contraindicated_drugs": [],
+      "indicated_surgeries": ["Appendectomy", "Laparoscopy"],
+      "differentials": ["Mesenteric Adenitis", "Ovarian Torsion", "Ectopic Pregnancy", "Gastroenteritis", "Ureteric Colic"],
+      "teaching": "Diagnosis is largely clinical (Alvarado score). Give pre-op antibiotics and obtain a beta-hCG in anyone of child-bearing potential before imaging. Appendectomy is definitive.",
+      "guideline": {"name": "WSES Jerusalem Guidelines for Acute Appendicitis 2020", "url": "https://doi.org/10.1186/s13017-020-00306-3"}
+    },
+    {
+      "id": "C0011880",
+      "name": "Diabetic Ketoacidosis",
+      "aliases": ["dka", "diabetic ketoacidosis", "ketoacidosis"],
+      "specialties": ["Emergency", "Internal Medicine"],
+      "difficulty": 2,
+      "chief_complaint": "Excessive thirst, urination and abdominal pain with heavy breathing",
+      "demographics": {"age_range": [16, 40], "sex": "any"},
+      "vitals": {"HR": 118, "SBP": 104, "DBP": 66, "RR": 28, "Temp": 37.2, "SpO2": 98},
+      "symptoms": [
+        {"name": "polyuria and polydipsia", "frequency": "common"},
+        {"name": "abdominal pain", "frequency": "common"},
+        {"name": "nausea and vomiting", "frequency": "common"},
+        {"name": "deep rapid (Kussmaul) breathing", "frequency": "common"},
+        {"name": "fruity breath odor", "frequency": "occasional"},
+        {"name": "lethargy and confusion", "frequency": "occasional"}
+      ],
+      "history": {
+        "onset": "I've felt awful for two days with a stomach bug and stopped my insulin.",
+        "thirst": "I can't stop drinking water and I'm peeing constantly.",
+        "abdominal pain": "My whole belly aches and I keep vomiting.",
+        "breathing": "I'm breathing hard and deep even though I'm just lying here.",
+        "medications": "I have type 1 diabetes and ran out of insulin.",
+        "fever": "Maybe a slight temperature."
+      },
+      "exam_findings": {
+        "General inspection": "Lethargic, breathing deeply and rapidly; breath smells fruity.",
+        "Examine throat": "Dry mucous membranes, poor skin turgor.",
+        "Palpate abdomen": "Diffuse mild tenderness, no rebound.",
+        "Auscultate lungs": "Clear, tachypneic.",
+        "Neurological exam": "Drowsy but rousable, oriented x2."
+      },
+      "appropriate_tests": ["BMP", "ABG", "CBC", "Urinalysis", "Lactate", "HbA1c", "Serum Ketones"],
+      "appropriate_exams": ["General inspection", "Palpate abdomen", "Neurological exam"],
+      "lab_deviations": {
+        "Glucose": {"value": 512},
+        "Bicarbonate": {"value": 10},
+        "Potassium": {"value": 5.6},
+        "Sodium": {"value": 131},
+        "pH": {"value": 7.18},
+        "pCO2": {"value": 26},
+        "HCO3": {"value": 10},
+        "HbA1c": {"value": 12.4},
+        "Urinalysis": {"finding": "Large ketones and glucose; no nitrites."},
+        "Serum Ketones": {"finding": "Beta-hydroxybutyrate markedly elevated at 5.4 mmol/L."}
+      },
+      "first_line_drugs": ["Normal Saline", "Insulin (regular)", "Potassium Chloride"],
+      "reasonable_drugs": ["Ondansetron"],
+      "contraindicated_drugs": ["Metformin", "Glyburide"],
+      "indicated_surgeries": [],
+      "differentials": ["Hyperosmolar Hyperglycemic State", "Sepsis", "Gastroenteritis", "Salicylate Toxicity"],
+      "teaching": "Fluids first, then insulin, and replace potassium before/with insulin if K+ is low-normal. Never start insulin if K+ < 3.3. Metformin and sulfonylureas have no role in acute DKA.",
+      "guideline": {"name": "ADA Standards of Care 2023 — Hyperglycemic Crises", "url": "https://doi.org/10.2337/dc23-Sint"}
+    },
+    {
+      "id": "C0004096",
+      "name": "Asthma Exacerbation",
+      "aliases": ["asthma", "asthma attack", "asthma exacerbation", "reactive airway", "bronchospasm"],
+      "specialties": ["Pediatrics", "Emergency"],
+      "difficulty": 1,
+      "chief_complaint": "Wheezing and difficulty breathing that woke the child at night",
+      "demographics": {"age_range": [6, 14], "sex": "any"},
+      "vitals": {"HR": 122, "SBP": 108, "DBP": 68, "RR": 30, "Temp": 37.0, "SpO2": 92},
+      "symptoms": [
+        {"name": "wheezing", "frequency": "common"},
+        {"name": "cough worse at night", "frequency": "common"},
+        {"name": "chest tightness", "frequency": "common"},
+        {"name": "difficulty speaking in full sentences", "frequency": "occasional"},
+        {"name": "use of accessory muscles", "frequency": "occasional"}
+      ],
+      "history": {
+        "onset": "It got bad overnight after playing with the cat.",
+        "breathing": "He's wheezing and can only speak a few words at a time.",
+        "cough": "A dry cough, worse at night.",
+        "triggers": "Cats and cold air set him off; he has eczema too.",
+        "medications": "He uses an albuterol inhaler but we ran out.",
+        "family history": "His mother has asthma and hay fever."
+      },
+      "exam_findings": {
+        "General inspection": "Sitting forward, tachypneic, mild intercostal retractions.",
+        "Auscultate lungs": "Diffuse expiratory wheeze with prolonged expiratory phase; air entry reduced at both bases.",
+        "Auscultate heart": "Tachycardic, no murmur.",
+        "Examine throat": "Clear, no exudate.",
+        "Inspect skin": "Dry flexural eczema patches."
+      },
+      "appropriate_tests": ["Peak Flow", "Pulse Oximetry", "Chest X-ray", "ABG", "CBC"],
+      "appropriate_exams": ["Auscultate lungs", "General inspection"],
+      "lab_deviations": {
+        "Peak Expiratory Flow": {"value": 180},
+        "Chest X-ray": {"finding": "Hyperinflation, no focal consolidation or pneumothorax."},
+        "pCO2": {"value": 34}
+      },
+      "first_line_drugs": ["Albuterol", "Ipratropium", "Prednisolone", "Prednisone", "Oxygen"],
+      "reasonable_drugs": ["Magnesium Sulfate"],
+      "contraindicated_drugs": ["Propranolol"],
+      "indicated_surgeries": [],
+      "differentials": ["Bronchiolitis", "Foreign Body Aspiration", "Croup", "Pneumonia", "Anaphylaxis"],
+      "teaching": "Early inhaled short-acting beta-agonist plus systemic corticosteroids is the cornerstone. Non-selective beta-blockers can trigger fatal bronchospasm and are contraindicated.",
+      "guideline": {"name": "GINA Global Strategy for Asthma 2023", "url": "https://ginasthma.org/2023-gina-main-report/"}
+    },
+    {
+      "id": "C0007642",
+      "name": "Cellulitis",
+      "aliases": ["cellulitis", "skin infection", "soft tissue infection"],
+      "specialties": ["Dermatology", "Internal Medicine"],
+      "difficulty": 1,
+      "chief_complaint": "A red, hot, swollen and painful lower leg for 2 days",
+      "demographics": {"age_range": [40, 70], "sex": "any"},
+      "vitals": {"HR": 96, "SBP": 128, "DBP": 80, "RR": 18, "Temp": 38.0, "SpO2": 98},
+      "symptoms": [
+        {"name": "spreading redness of the skin", "frequency": "common"},
+        {"name": "warmth and swelling", "frequency": "common"},
+        {"name": "pain and tenderness", "frequency": "common"},
+        {"name": "fever", "frequency": "occasional"},
+        {"name": "skin dimpling (peau d'orange)", "frequency": "rare"}
+      ],
+      "history": {
+        "onset": "The redness started two days ago and is spreading up my shin.",
+        "skin": "It's red, hot, tight and tender to touch.",
+        "injury": "I scraped my leg gardening last week.",
+        "fever": "I've had chills and felt feverish.",
+        "medications": "I take a water pill for blood pressure.",
+        "diabetes": "I have type 2 diabetes."
+      },
+      "exam_findings": {
+        "General inspection": "Comfortable at rest, favouring the left leg.",
+        "Inspect skin": "Warm, erythematous, poorly demarcated plaque over the left shin with mild swelling; a small healing abrasion is present. No fluctuance or crepitus.",
+        "Palpate lymph nodes": "Tender left inguinal lymphadenopathy.",
+        "Check extremities/edema": "Mild pitting edema of the left ankle; pulses intact.",
+        "Auscultate lungs": "Clear."
+      },
+      "appropriate_tests": ["CBC", "CRP", "BMP", "Blood Culture", "Wound Culture"],
+      "appropriate_exams": ["Inspect skin", "Palpate lymph nodes", "Check extremities/edema"],
+      "lab_deviations": {
+        "WBC": {"value": 13.1},
+        "CRP": {"value": 74},
+        "Wound Culture": {"finding": "Pending; Gram stain shows gram-positive cocci in clusters."}
+      },
+      "first_line_drugs": ["Cephalexin", "Dicloxacillin", "Clindamycin", "Trimethoprim-Sulfamethoxazole"],
+      "reasonable_drugs": ["Amoxicillin-Clavulanate"],
+      "contraindicated_drugs": [],
+      "indicated_surgeries": [],
+      "differentials": ["Deep Vein Thrombosis", "Stasis Dermatitis", "Necrotizing Fasciitis", "Gout", "Contact Dermatitis"],
+      "teaching": "Non-purulent cellulitis is usually streptococcal — cover with cephalexin. Add MRSA coverage (e.g., TMP-SMX or clindamycin) if purulent. Mark the border to track spread.",
+      "guideline": {"name": "IDSA Skin & Soft Tissue Infection Guideline 2014", "url": "https://doi.org/10.1093/cid/ciu296"}
+    },
+    {
+      "id": "C0034186",
+      "name": "Acute Pyelonephritis",
+      "aliases": ["pyelonephritis", "kidney infection", "upper urinary tract infection", "uti", "urinary tract infection"],
+      "specialties": ["Internal Medicine", "Emergency"],
+      "difficulty": 1,
+      "chief_complaint": "Burning urination, fever and right flank pain",
+      "demographics": {"age_range": [20, 45], "sex": "female"},
+      "vitals": {"HR": 104, "SBP": 116, "DBP": 72, "RR": 18, "Temp": 38.9, "SpO2": 98},
+      "symptoms": [
+        {"name": "dysuria and urinary frequency", "frequency": "common"},
+        {"name": "flank pain", "frequency": "common"},
+        {"name": "fever and rigors", "frequency": "common"},
+        {"name": "nausea and vomiting", "frequency": "occasional"},
+        {"name": "cloudy foul-smelling urine", "frequency": "occasional"}
+      ],
+      "history": {
+        "onset": "I had burning urination for a few days and now a high fever and back pain.",
+        "urination": "It burns to pee and I go constantly; the urine looks cloudy.",
+        "flank pain": "There's a deep ache over my right lower back.",
+        "fever": "I've had shaking chills and a high fever.",
+        "menstrual": "My last period was normal; I'm not pregnant.",
+        "sexual history": "Sexually active, no new partners."
+      },
+      "exam_findings": {
+        "General inspection": "Flushed, uncomfortable, mild rigors.",
+        "Palpate abdomen": "Mild suprapubic tenderness; marked right costovertebral angle tenderness.",
+        "Auscultate lungs": "Clear.",
+        "Inspect skin": "Warm and flushed, no rash."
+      },
+      "appropriate_tests": ["Urinalysis", "Urine Culture", "CBC", "BMP", "CRP", "Blood Culture", "Beta-hCG"],
+      "appropriate_exams": ["Palpate abdomen", "General inspection"],
+      "lab_deviations": {
+        "WBC": {"value": 16.0},
+        "Neutrophils %": {"value": 88},
+        "CRP": {"value": 96},
+        "Urinalysis": {"finding": "Positive leukocyte esterase and nitrites; many WBCs and bacteria; WBC casts present."},
+        "Urine Culture": {"finding": "Pending; >100,000 CFU/mL gram-negative rods (likely E. coli)."},
+        "Beta-hCG": {"value": 0}
+      },
+      "first_line_drugs": ["Ceftriaxone", "Ciprofloxacin", "Levofloxacin"],
+      "reasonable_drugs": ["Gentamicin", "Trimethoprim-Sulfamethoxazole"],
+      "contraindicated_drugs": ["Nitrofurantoin"],
+      "indicated_surgeries": [],
+      "differentials": ["Lower UTI / Cystitis", "Nephrolithiasis", "Pelvic Inflammatory Disease", "Appendicitis"],
+      "teaching": "Pyelonephritis needs a systemically-active agent (ceftriaxone or a fluoroquinolone). Nitrofurantoin does not achieve renal tissue levels and is inappropriate for upper-tract infection.",
+      "guideline": {"name": "IDSA Uncomplicated Cystitis & Pyelonephritis Guideline 2011", "url": "https://doi.org/10.1093/cid/ciq257"}
+    },
+    {
+      "id": "C0013928",
+      "name": "Ectopic Pregnancy",
+      "aliases": ["ectopic pregnancy", "ectopic", "tubal pregnancy"],
+      "specialties": ["OB-GYN", "Emergency"],
+      "difficulty": 3,
+      "chief_complaint": "Lower abdominal pain and vaginal spotting with a late period",
+      "demographics": {"age_range": [22, 38], "sex": "female"},
+      "vitals": {"HR": 108, "SBP": 106, "DBP": 68, "RR": 18, "Temp": 37.1, "SpO2": 99},
+      "symptoms": [
+        {"name": "unilateral lower abdominal pain", "frequency": "common"},
+        {"name": "vaginal spotting", "frequency": "common"},
+        {"name": "amenorrhea (missed period)", "frequency": "common"},
+        {"name": "shoulder-tip pain", "frequency": "occasional"},
+        {"name": "dizziness", "frequency": "occasional"}
+      ],
+      "history": {
+        "onset": "The pain started today on my left side and I've been spotting.",
+        "menstrual": "My period is about six weeks late.",
+        "pregnancy": "I might be pregnant; I haven't tested.",
+        "abdominal pain": "A sharp cramp low on the left, and my shoulder aches too.",
+        "sexual history": "I had a chlamydia infection a couple of years ago.",
+        "dizziness": "I felt faint when I stood up this morning."
+      },
+      "exam_findings": {
+        "General inspection": "Pale, anxious, mildly tachycardic.",
+        "Palpate abdomen": "Left lower quadrant tenderness with mild guarding; no rebound.",
+        "Pelvic exam": "Left adnexal tenderness and a fullness; closed cervical os with scant dark blood; cervical motion tenderness.",
+        "Check extremities/edema": "Cool peripheries, no edema."
+      },
+      "appropriate_tests": ["Beta-hCG", "Transvaginal Ultrasound", "CBC", "BMP", "Blood Type & Screen"],
+      "appropriate_exams": ["Pelvic exam", "Palpate abdomen", "General inspection"],
+      "lab_deviations": {
+        "Beta-hCG": {"value": 2200},
+        "Hemoglobin": {"value": 10.4},
+        "Transvaginal Ultrasound": {"finding": "Empty uterus with a 3 cm left adnexal mass and moderate free fluid in the pelvis; no intrauterine gestational sac."},
+        "Blood Type & Screen": {"finding": "Blood type O negative; antibody screen negative."}
+      },
+      "first_line_drugs": ["Methotrexate"],
+      "reasonable_drugs": ["Rho(D) Immune Globulin", "Morphine"],
+      "contraindicated_drugs": ["Misoprostol"],
+      "indicated_surgeries": ["Salpingectomy", "Salpingostomy", "Laparoscopy"],
+      "differentials": ["Threatened Miscarriage", "Ovarian Torsion", "Ruptured Ovarian Cyst", "Appendicitis", "Pelvic Inflammatory Disease"],
+      "teaching": "Any person of child-bearing age with abdominal pain gets a beta-hCG. A positive hCG with an empty uterus on TVUS is ectopic until proven otherwise. Give anti-D if Rh-negative. Methotrexate for stable, unruptured cases; surgery if unstable or ruptured.",
+      "guideline": {"name": "ACOG Practice Bulletin 193: Tubal Ectopic Pregnancy 2018", "url": "https://doi.org/10.1097/AOG.0000000000002560"}
+    },
+    {
+      "id": "C0032914",
+      "name": "Preeclampsia",
+      "aliases": ["preeclampsia", "pre-eclampsia", "pregnancy induced hypertension", "toxemia"],
+      "specialties": ["OB-GYN"],
+      "difficulty": 2,
+      "chief_complaint": "Severe headache and swelling at 34 weeks of pregnancy",
+      "demographics": {"age_range": [24, 39], "sex": "female"},
+      "vitals": {"HR": 88, "SBP": 168, "DBP": 108, "RR": 18, "Temp": 36.9, "SpO2": 99},
+      "symptoms": [
+        {"name": "severe headache", "frequency": "common"},
+        {"name": "visual disturbance (blurring / spots)", "frequency": "common"},
+        {"name": "swelling of hands and face", "frequency": "common"},
+        {"name": "right upper quadrant pain", "frequency": "occasional"},
+        {"name": "rapid weight gain", "frequency": "occasional"}
+      ],
+      "history": {
+        "onset": "The headache started this morning and won't go with paracetamol.",
+        "pregnancy": "I'm 34 weeks with my first baby.",
+        "vision": "I keep seeing flashing spots.",
+        "swelling": "My hands, feet and face have puffed up over a few days.",
+        "abdominal pain": "I have an ache under my right ribs.",
+        "prenatal care": "My blood pressure was creeping up at my last visit."
+      },
+      "exam_findings": {
+        "General inspection": "Uncomfortable, periorbital and pedal edema.",
+        "Check extremities/edema": "3+ pitting edema to the knees; brisk reflexes with 2 beats of clonus.",
+        "Neurological exam": "Hyperreflexia; no focal deficit.",
+        "Palpate abdomen": "Gravid uterus consistent with dates; mild RUQ tenderness."
+      },
+      "appropriate_tests": ["BMP", "CBC", "LFT", "Urinalysis", "Uric Acid", "Urine Protein/Creatinine Ratio"],
+      "appropriate_exams": ["Check extremities/edema", "Neurological exam", "Palpate abdomen"],
+      "lab_deviations": {
+        "Platelets": {"value": 92},
+        "ALT": {"value": 88},
+        "AST": {"value": 96},
+        "Creatinine": {"value": 1.3},
+        "Uric Acid": {"value": 7.8},
+        "Urinalysis": {"finding": "3+ proteinuria; no nitrites or leukocyte esterase."},
+        "Urine Protein/Creatinine Ratio": {"finding": "Elevated at 0.8 mg/mg (>0.3 abnormal)."}
+      },
+      "first_line_drugs": ["Labetalol", "Hydralazine", "Nifedipine", "Magnesium Sulfate"],
+      "reasonable_drugs": ["Betamethasone"],
+      "contraindicated_drugs": ["Lisinopril", "Enalapril", "Losartan"],
+      "indicated_surgeries": [],
+      "differentials": ["Gestational Hypertension", "Chronic Hypertension", "HELLP Syndrome", "Migraine", "Acute Fatty Liver of Pregnancy"],
+      "teaching": "Preeclampsia = new hypertension + proteinuria (or end-organ dysfunction) after 20 weeks. Control BP with labetalol/hydralazine/nifedipine and give magnesium sulfate for seizure prophylaxis. ACE inhibitors and ARBs are teratogenic and contraindicated in pregnancy.",
+      "guideline": {"name": "ACOG Gestational Hypertension & Preeclampsia 2020", "url": "https://doi.org/10.1097/AOG.0000000000003891"}
+    },
+    {
+      "id": "C0008325",
+      "name": "Acute Cholecystitis",
+      "aliases": ["cholecystitis", "acute cholecystitis", "gallbladder infection", "gallstone attack", "biliary colic"],
+      "specialties": ["Surgery", "Emergency"],
+      "difficulty": 2,
+      "chief_complaint": "Severe right upper belly pain after a fatty meal, with fever",
+      "demographics": {"age_range": [38, 60], "sex": "female"},
+      "vitals": {"HR": 98, "SBP": 132, "DBP": 82, "RR": 18, "Temp": 38.3, "SpO2": 98},
+      "symptoms": [
+        {"name": "right upper quadrant pain", "frequency": "common"},
+        {"name": "pain radiating to right shoulder blade", "frequency": "occasional"},
+        {"name": "nausea and vomiting", "frequency": "common"},
+        {"name": "fever", "frequency": "occasional"},
+        {"name": "pain after fatty meals", "frequency": "common"}
+      ],
+      "history": {
+        "onset": "The pain came on a few hours after a greasy dinner and hasn't eased.",
+        "abdominal pain": "A steady severe pain under my right ribs that goes to my shoulder blade.",
+        "appetite": "I feel sick and have vomited twice.",
+        "fever": "I think I have a temperature.",
+        "prior episodes": "I've had milder attacks after fatty food before.",
+        "jaundice": "No yellowing of my eyes or dark urine."
+      },
+      "exam_findings": {
+        "General inspection": "Uncomfortable, mild sweating.",
+        "Palpate abdomen": "Right upper quadrant tenderness with guarding; inspiratory arrest on deep palpation (positive Murphy's sign).",
+        "Inspect skin": "No jaundice or scleral icterus.",
+        "Auscultate lungs": "Clear at the right base."
+      },
+      "appropriate_tests": ["CBC", "LFT", "Lipase", "CRP", "Abdominal Ultrasound", "BMP"],
+      "appropriate_exams": ["Palpate abdomen", "General inspection", "Inspect skin"],
+      "lab_deviations": {
+        "WBC": {"value": 13.8},
+        "ALP": {"value": 168},
+        "Total Bilirubin": {"value": 1.6},
+        "ALT": {"value": 62},
+        "CRP": {"value": 88},
+        "Abdominal Ultrasound": {"finding": "Gallstones with a thickened gallbladder wall (5 mm), pericholecystic fluid and a sonographic Murphy's sign; common bile duct not dilated."}
+      },
+      "first_line_drugs": ["Piperacillin-Tazobactam", "Ceftriaxone", "Metronidazole"],
+      "reasonable_drugs": ["Morphine", "Ondansetron"],
+      "contraindicated_drugs": [],
+      "indicated_surgeries": ["Cholecystectomy", "Laparoscopy"],
+      "differentials": ["Biliary Colic", "Choledocholithiasis", "Acute Pancreatitis", "Peptic Ulcer Disease", "Right Lower Lobe Pneumonia"],
+      "teaching": "Right upper quadrant pain, fever and a positive Murphy's sign with gallstones on ultrasound is acute cholecystitis. Start antibiotics and analgesia; early laparoscopic cholecystectomy (within 72h) is preferred.",
+      "guideline": {"name": "Tokyo Guidelines 2018 for Acute Cholecystitis", "url": "https://doi.org/10.1002/jhbp.515"}
+    },
+    {
+      "id": "C0006271",
+      "name": "Bronchiolitis",
+      "aliases": ["bronchiolitis", "rsv", "respiratory syncytial virus"],
+      "specialties": ["Pediatrics"],
+      "difficulty": 2,
+      "chief_complaint": "A 6-month-old with cough, congestion and fast breathing",
+      "demographics": {"age_range": [0, 2], "sex": "any"},
+      "vitals": {"HR": 150, "SBP": 92, "DBP": 58, "RR": 52, "Temp": 37.8, "SpO2": 93},
+      "symptoms": [
+        {"name": "nasal congestion and coryza", "frequency": "common"},
+        {"name": "cough", "frequency": "common"},
+        {"name": "tachypnea and wheeze", "frequency": "common"},
+        {"name": "poor feeding", "frequency": "occasional"},
+        {"name": "low-grade fever", "frequency": "occasional"},
+        {"name": "apnea", "frequency": "rare"}
+      ],
+      "history": {
+        "onset": "It started as a runny nose three days ago and now she's breathing fast.",
+        "breathing": "Her chest sucks in and she's wheezing.",
+        "feeding": "She's taking less than half her usual bottles.",
+        "fever": "A mild temperature.",
+        "sick contacts": "Her older brother has a cold.",
+        "wet diapers": "Fewer wet diapers than normal."
+      },
+      "exam_findings": {
+        "General inspection": "Alert infant with nasal flaring, mild subcostal retractions and audible wheeze.",
+        "Auscultate lungs": "Diffuse fine crackles and expiratory wheeze bilaterally.",
+        "Examine throat": "Copious clear nasal secretions.",
+        "Otoscopy": "Tympanic membranes normal.",
+        "Check extremities/edema": "Capillary refill 2 seconds, mucous membranes slightly dry."
+      },
+      "appropriate_tests": ["Pulse Oximetry", "RSV Antigen", "Chest X-ray", "CBC"],
+      "appropriate_exams": ["Auscultate lungs", "General inspection", "Examine throat"],
+      "lab_deviations": {
+        "RSV Antigen": {"finding": "Positive for respiratory syncytial virus."},
+        "Chest X-ray": {"finding": "Hyperinflation with peribronchial cuffing; patchy atelectasis, no focal consolidation."}
+      },
+      "first_line_drugs": ["Oxygen", "Normal Saline (nasal)"],
+      "reasonable_drugs": ["Acetaminophen"],
+      "contraindicated_drugs": ["Amoxicillin", "Azithromycin", "Prednisolone", "Albuterol"],
+      "indicated_surgeries": [],
+      "differentials": ["Asthma / Viral-Induced Wheeze", "Pneumonia", "Foreign Body Aspiration", "Congenital Heart Disease"],
+      "teaching": "Bronchiolitis is a clinical diagnosis and management is supportive: suctioning, hydration and oxygen. Bronchodilators, steroids, antibiotics and routine chest X-rays are not recommended and add cost and harm.",
+      "guideline": {"name": "AAP Clinical Practice Guideline: Bronchiolitis 2014", "url": "https://doi.org/10.1542/peds.2014-2742"}
+    },
+    {
+      "id": "C0011615",
+      "name": "Atopic Dermatitis",
+      "aliases": ["atopic dermatitis", "eczema", "atopic eczema"],
+      "specialties": ["Dermatology", "Pediatrics"],
+      "difficulty": 1,
+      "chief_complaint": "An itchy, dry, red rash in the elbow and knee creases",
+      "demographics": {"age_range": [3, 18], "sex": "any"},
+      "vitals": {"HR": 84, "SBP": 112, "DBP": 70, "RR": 16, "Temp": 36.8, "SpO2": 99},
+      "symptoms": [
+        {"name": "intense itching", "frequency": "common"},
+        {"name": "dry scaly skin", "frequency": "common"},
+        {"name": "erythematous plaques in flexures", "frequency": "common"},
+        {"name": "worse at night", "frequency": "occasional"},
+        {"name": "lichenification from scratching", "frequency": "occasional"}
+      ],
+      "history": {
+        "onset": "The rash flares every winter and after using scented soap.",
+        "skin": "It's dry, red and unbearably itchy, especially in the elbow creases.",
+        "itch": "The itching is worse at night and disturbs sleep.",
+        "triggers": "Wool, heat and fragranced products make it worse.",
+        "family history": "I have hay fever and my father had asthma.",
+        "allergies": "Seasonal allergies, no drug allergies."
+      },
+      "exam_findings": {
+        "General inspection": "Well, comfortable, scratching intermittently.",
+        "Inspect skin": "Ill-defined erythematous, scaly, excoriated plaques in the antecubital and popliteal fossae with lichenification; skin is diffusely dry. No honey-coloured crust or pustules.",
+        "Palpate lymph nodes": "No significant lymphadenopathy.",
+        "Auscultate lungs": "Clear."
+      },
+      "appropriate_tests": ["Skin Swab", "IgE Level"],
+      "appropriate_exams": ["Inspect skin", "General inspection"],
+      "lab_deviations": {
+        "IgE Level": {"value": 420},
+        "Skin Swab": {"finding": "No significant bacterial growth; no evidence of secondary infection."}
+      },
+      "first_line_drugs": ["Topical Emollient", "Hydrocortisone", "Triamcinolone", "Tacrolimus"],
+      "reasonable_drugs": ["Cetirizine", "Diphenhydramine"],
+      "contraindicated_drugs": [],
+      "indicated_surgeries": [],
+      "differentials": ["Contact Dermatitis", "Psoriasis", "Scabies", "Tinea Corporis", "Seborrheic Dermatitis"],
+      "teaching": "Atopic dermatitis is a clinical diagnosis. The foundation of treatment is liberal emollients plus topical corticosteroids for flares; topical calcineurin inhibitors spare steroid-sensitive sites. Reserve antibiotics for clear secondary infection.",
+      "guideline": {"name": "AAD Atopic Dermatitis Guideline 2014", "url": "https://doi.org/10.1016/j.jaad.2014.03.023"}
+    }
+  ]
+}

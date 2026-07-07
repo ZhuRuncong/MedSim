@@ -1,0 +1,3103 @@
+{
+  "_meta": {
+    "note": "Educational drug metadata, a curated pairwise interaction matrix, and allergy cross-reactivity classes. Interactions are checked in both directions by the engine. Not for clinical use.",
+    "schema_version": 1,
+    "grounded_at": "2026-07-06T23:37:51+00:00",
+    "sources": {
+      "RxNorm / RxClass (NLM)": "free, no licence \u2014 drug class + ATC",
+      "openFDA drug label API": "CC0 public domain \u2014 monograph, contraindications, DailyMed URL",
+      "DDInter 2.0 (SCBDD)": "CC BY-NC \u2014 pairwise interaction severities (NON-COMMERCIAL)",
+      "ONC High-Priority DDI / CredibleMeds": "expert consensus \u2014 forced 'major' overrides"
+    },
+    "attribution": "Contains data from RxNorm/RxClass (NLM), openFDA (FDA, CC0), and DDInter 2.0 (CC BY-NC; non-commercial use)."
+  },
+  "drugs": {
+    "Amoxicillin": {
+      "class": "Penicillin-class Antibacterial",
+      "allergy_class": "penicillin",
+      "route": "PO",
+      "monograph": "Amoxicillin and Clavulanate Potassium is indicated for the treatment of infections in adults and pediatric patients, due to susceptible isolates of the designated bacteria in the conditions listed below: Lower Respiratory Tract Infections -",
+      "atc": "J01CA",
+      "atc_allergy_family": "penicillin",
+      "contraindications": "History of a serious hypersensitivity reaction (e.g., anaphylaxis or Stevens-Johnson syndrome) to Amoxicillin and Clavulanate Potassium or to other beta\u2011lactams (e.g., penicillins or cephalosporins).",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00cf4429-e37c-4490-b22d-3cd796124296",
+      "rxcui": "562508",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Amoxicillin-Clavulanate": {
+      "class": "aminopenicillin + beta-lactamase inhibitor",
+      "allergy_class": "penicillin",
+      "route": "PO",
+      "monograph": "Broadened beta-lactam for bite wounds, sinusitis, and some SSTIs."
+    },
+    "Ampicillin": {
+      "class": "Penicillin-class Antibacterial",
+      "allergy_class": "penicillin",
+      "route": "IV",
+      "monograph": "Ampicillin and sulbactam for injection is indicated for the treatment of infections due to susceptible strains of the designated microorganisms in the conditions listed below.",
+      "atc": "J01CR",
+      "atc_allergy_family": "penicillin",
+      "contraindications": "The use of ampicillin and sulbactam for injection is contraindicated in individuals with a history of serious hypersensitivity reactions (e.g., anaphylaxis or Stevens-Johnson syndrome) to ampicillin, sulbactam or to other beta-lactam antibacterial drugs (e.g., penicillins and cephalosporins).",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=006f9a3f-b4e3-4aa5-ac65-6cc3d3e2582d",
+      "rxcui": "1659592",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Dicloxacillin": {
+      "class": "Penicillin-class Antibacterial",
+      "allergy_class": "penicillin",
+      "route": "PO",
+      "monograph": "To reduce the development of drug-resistant bacteria and maintain the effectiveness of dicloxacillin sodium capsules and other antibacterial drugs, dicloxacillin sodium capsules should be used only to treat or prevent infections that are pr",
+      "atc": "J01CF",
+      "atc_allergy_family": "penicillin",
+      "contraindications": "Dicloxacillin sodium is contraindicated in persons who have shown hypersensitivity to any of the penicillins or any component of the formulations.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24e821aa-85b8-4f5a-aa13-83ff132952ca",
+      "rxcui": "197596",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Piperacillin-Tazobactam": {
+      "class": "antipseudomonal penicillin",
+      "allergy_class": "penicillin",
+      "route": "IV",
+      "monograph": "Broad-spectrum beta-lactam for intra-abdominal and severe infections."
+    },
+    "Penicillin G": {
+      "class": "Penicillin-class Antibacterial",
+      "allergy_class": "penicillin",
+      "route": "IV",
+      "monograph": "To reduce the development of drug-resistant bacteria and maintain the effectiveness of Bicillin L-A and other antibacterial drugs, Bicillin L-A should be used only to treat or prevent infections that are proven or strongly suspected to be c",
+      "atc": "J01CE",
+      "atc_allergy_family": "penicillin",
+      "contraindications": "history of a previous hypersensitivity reaction to any of the penicillins is a contraindication.",
+      "boxed_warning": "USE.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=012d46f1-d0a0-4676-a879-cd320297ab16",
+      "rxcui": "731564",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Cephalexin": {
+      "class": "Cephalosporin Antibacterial",
+      "allergy_class": "cephalosporin",
+      "route": "PO",
+      "monograph": "Cephalexin capsules are a cephalosporin antibacterial drug indicated for the treatment of the following infections caused by susceptible isolates of designated bacteria: Respiratory tract infection ( 1.1 ) Otitis media ( 1.2 ) Skin and skin",
+      "atc": "J01DB",
+      "atc_allergy_family": "cephalosporin",
+      "contraindications": "Cephalexin capsules are contraindicated in patients with known hypersensitivity to cephalexin or other members of the cephalosporin class of antibacterial drugs. Patients with known hypersensitivity to cephalexin or other members of the cephalosporin class of antibacterial drugs. ( 4 )",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=02b5cd6f-3df8-43c1-879d-217fcf55231a",
+      "rxcui": "309114",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Cefazolin": {
+      "class": "Cephalosporin Antibacterial",
+      "allergy_class": "cephalosporin",
+      "route": "IV",
+      "monograph": "Cefazolin for Injection, USP is indicated for the treatment of the following serious infections when due to susceptible organisms.",
+      "atc": "J01DB",
+      "atc_allergy_family": "cephalosporin",
+      "contraindications": "ANTIBIOTICS.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00dd6da7-50a8-44c9-b2dc-7948973df392",
+      "rxcui": "1665050",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Cefoxitin": {
+      "class": "Cephalosporin Antibacterial",
+      "allergy_class": "cephalosporin",
+      "route": "IV",
+      "monograph": "Treatment: CEFOXITIN FOR INJECTION, USP is indicated for the treatment of serious infections caused by susceptible strains of the designated microorganisms in the diseases listed below.",
+      "atc": "J01DC",
+      "atc_allergy_family": "cephalosporin",
+      "contraindications": "CEFOXITIN FOR INJECTION is contraindicated in patients who have shown hypersensitivity to cefoxitin and the cephalosporin group of antibiotics.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2a9d1e7b-96ee-4e6c-a1e8-47b76b924422",
+      "rxcui": "1665102",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Ceftriaxone": {
+      "class": "Cephalosporin Antibacterial",
+      "allergy_class": "cephalosporin",
+      "route": "IV",
+      "monograph": "Before instituting treatment with ceftriaxone, appropriate specimens should be obtained for isolation of the causative organism and for determination of its susceptibility to the drug.",
+      "atc": "J01DD",
+      "atc_allergy_family": "cephalosporin",
+      "contraindications": "Hypersensitivity Ceftriaxone for injection is contraindicated in patients with known hypersensitivity to ceftriaxone, any of its excipients or to any other cephalosporin.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03283208-8616-4117-9d2b-aa8046017a4f",
+      "rxcui": "309092",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Azithromycin": {
+      "class": "Macrolide Antimicrobial",
+      "allergy_class": "macrolide",
+      "route": "PO",
+      "monograph": "Azithromycin is a macrolide antibacterial drug indicated for the treatment of patients with mild to moderate infections caused by susceptible strains of the designated microorganisms in the specific conditions listed below.",
+      "atc": "J01FA",
+      "atc_allergy_family": "macrolide",
+      "contraindications": "\u2022 Patients with known hypersensitivity to azithromycin, erythromycin, any macrolide or ketolide drug.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=003307c5-3f73-4a5d-a704-bfdea3c656e8",
+      "rxcui": "248656",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Doxycycline": {
+      "class": "Tetracycline-class Drug",
+      "allergy_class": "tetracycline",
+      "route": "PO",
+      "monograph": "To reduce the development of drug-resistant bacteria and maintain effectiveness of doxycycline and other antibacterial drugs, doxycycline should be used only to treat or prevent infections that are proven or strongly suspected to be caused",
+      "atc": "J01AA",
+      "atc_allergy_family": "tetracycline",
+      "contraindications": "This drug is contraindicated in persons who have shown hypersensitivity to any of the tetracyclines.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00b2aa98-dea2-90c3-e063-6294a90a35d6",
+      "rxcui": "1649988",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Levofloxacin": {
+      "class": "Fluoroquinolone Antibacterial",
+      "allergy_class": "fluoroquinolone",
+      "route": "PO/IV",
+      "monograph": "& USAGE Levofloxacin is a fluoroquinolone antibacterial indicated in adults (18 years of age and older) with infections caused by designated, susceptible bacteria and in pediatric patients where indicated (1, 12.4).",
+      "atc": "J01MA",
+      "atc_allergy_family": "fluoroquinolone",
+      "contraindications": "Levofloxacin tablets are contraindicated in persons with known hypersensitivity to levofloxacin, or other quinolone antibacterials [see Warnings and Precautions ( 5.3 )]. Known hypersensitivity to levofloxacin or other quinolones ( 4 , 5.7 )",
+      "boxed_warning": "SERIOUS ADVERSE REACTIONS INCLUDING TENDINITIS, TENDON RUPTURE, PERIPHERAL NEUROPATHY, CENTRAL NERVOUS SYSTEM EFFECTS AND EXACERBATION OF MYASTHENIA GRAVIS \u2022 Fluoroquinolones, including levofloxacin, have been associated with disabling and potentially irreversible serious adverse reactions that have",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05d179f5-b200-8597-e063-6394a90a10cc",
+      "rxcui": "199885",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Ciprofloxacin": {
+      "class": "Fluoroquinolone Antibacterial",
+      "allergy_class": "fluoroquinolone",
+      "route": "PO/IV",
+      "monograph": "Ciprofloxacin Ophthalmic Solution is indicated for the treatment of infections caused by susceptible strains of the designated microorganisms in the conditions listed below: Corneal Ulcers: Pseudomonas aeruginosa Serratia marcescens * Staph",
+      "atc": "J01MA",
+      "atc_allergy_family": "fluoroquinolone",
+      "contraindications": "history of hypersensitivity to ciprofloxacin or any other component of the medication is a contraindication to its use. A history of hypersensitivity to other quinolones may also contraindicate the use of ciprofloxacin.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b2836d-cd3d-4d7f-970c-66ec2d788667",
+      "rxcui": "309307",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Clindamycin": {
+      "class": "Lincosamide Antibacterial",
+      "allergy_class": "lincosamide",
+      "route": "PO/IV",
+      "monograph": "Clindamycin phosphate topical lotion is indicated in the treatment of acne vulgaris.",
+      "atc": "J01FF",
+      "atc_allergy_family": "lincosamide",
+      "contraindications": "Clindamycin phosphate topical lotion is contraindicated in individuals with a history of hypersensitivity to preparations containing clindamycin or lincomycin, a history of regional enteritis or ulcerative colitis, or a history of antibiotic-associated colitis.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00fe3546-a166-412f-a543-0ae7763c0ca0",
+      "rxcui": "197519",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Trimethoprim-Sulfamethoxazole": {
+      "class": "folate-synthesis inhibitor antibiotic",
+      "allergy_class": "sulfa",
+      "route": "PO",
+      "monograph": "MRSA and UTI coverage; sulfa allergy and hyperkalemia risk."
+    },
+    "Nitrofurantoin": {
+      "class": "Nitrofuran Antibacterial",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "& USAGE Nitrofurantoin is indicated in adults and pediatric patients 1 month of age and older for the treatment of urinary tract infections due to susceptible strains of Escherichia coli , Enterococcus species, Staphylococcus aureus , Klebs",
+      "atc": "J01XE",
+      "contraindications": "Nitrofurantoin is contraindicated in: patients with known hypersensitivity to nitrofurantoin [see Warnings and Precautions (5.1)].",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04af8b73-7e15-7da8-e063-6294a90af284",
+      "rxcui": "311989",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Gentamicin": {
+      "class": "Aminoglycoside Antibacterial",
+      "allergy_class": "aminoglycoside",
+      "route": "IV",
+      "monograph": "To reduce the development of drug-resistant bacteria and maintain the effectiveness of Gentamicin Injection, USP and other antibacterial drugs, Gentamicin Injection, USP should be used only to treat or prevent infections that are proven or",
+      "atc": "J01GB",
+      "atc_allergy_family": "aminoglycoside",
+      "contraindications": "Hypersensitivity to gentamicin is a contraindication to its use. A history of hypersensitivity or serious toxic reactions to other aminoglycosides may contraindicate use of gentamicin because of the known cross-sensitivity of patients to drugs in this class.",
+      "boxed_warning": "Patients treated with aminoglycosides should be under close clinical observation because of the potential toxicity associated with their use.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09cf88af-59da-f147-e063-6294a90aac99",
+      "rxcui": "313996",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Metronidazole": {
+      "class": "Nitroimidazole Antimicrobial",
+      "allergy_class": "none",
+      "route": "PO/IV",
+      "monograph": "Symptomatic Trichomoniasis.",
+      "atc": "A02BD",
+      "contraindications": "Hypersensitivity Metronidazole tablet are contraindicated in patients with a prior history of hypersensitivity to metronidazole or other nitroimidazole derivatives.",
+      "boxed_warning": "Metronidazole has been shown to be carcinogenic in mice and rats (see PRECAUTIONS ). Unnecessary use of the drug should be avoided. Its use should be reserved for the conditions described in the INDICATIONS AND USAGE section below.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=02046a22-a5eb-4bb7-bec7-e5a2aa55e142",
+      "rxcui": "314106",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Vancomycin": {
+      "class": "Glycopeptide Antibacterial",
+      "allergy_class": "none",
+      "route": "IV",
+      "monograph": "Vancomycin Hydrochloride for Injection, USP is indicated for the treatment of serious or severe infections caused by susceptible strains of methicillin-resistant (\u03b2-lactam-resistant) staphylococci.",
+      "atc": "A07AA",
+      "contraindications": "Vancomycin hydrochloride for injection is contraindicated in patients with known hypersensitivity to this antibiotic.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00946db3-d6c5-4534-a870-1ec6e63eda43",
+      "rxcui": "1807513",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Aspirin": {
+      "class": "Platelet Aggregation Inhibitor",
+      "allergy_class": "nsaid",
+      "route": "PO",
+      "monograph": "Uses for the temporary relief of minor aches and pains or as recommended by your doctor.",
+      "atc": "N02BA",
+      "atc_allergy_family": "nsaid",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0058175f-3474-40c3-a046-6cfaec86d84b",
+      "rxcui": "308416",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Clopidogrel": {
+      "class": "P2Y12 Platelet Inhibitor",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Clopidogrel tablets are a P2Y 12 platelet inhibitor indicated for: Acute coronary syndrome \u2013 For patients with non\u2013ST-segment elevation ACS (unstable angina [UA]/non\u2013ST-elevation myocardial infarction [NSTEMI]), clopidogrel tablets have bee",
+      "atc": "B01AC",
+      "contraindications": "Active pathological bleeding, such as peptic ulcer or intracranial hemorrhage (4.1) Hypersensitivity to clopidogrel or any component of the product (4.2) 4.1 Active Bleeding Clopidogrel tablets are contraindicated in patients with active pathological bleeding such as peptic ulcer or intracranial hem",
+      "boxed_warning": "DIMINISHED ANTIPLATELET EFFECT IN PATIENTS WITH TWO LOSS-OF-FUNCTION ALLELES OF THE CYP2C19 GENE The effectiveness of clopidogrel results from its antiplatelet activity, which is dependent on its conversion to an active metabolite by the cytochrome P450 (CYP) system, principally CYP2C19 [see Warning",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0078fb3d-3595-4ae1-a059-1d5e81c879cf",
+      "rxcui": "309362",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Ticagrelor": {
+      "class": "P2Y12 Platelet Inhibitor",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Ticagrelor is a P2Y 12 platelet inhibitor indicated to reduce the risk of cardiovascular (CV) death, myocardial infarction (MI), and stroke in patients with acute coronary syndrome (ACS) or a history of myocardial infarction (MI).",
+      "atc": "B01AC",
+      "contraindications": "\u2022 History of intracranial hemorrhage.",
+      "boxed_warning": "BLEEDING RISK \u2022 Ticagrelor, like other antiplatelet agents, can cause significant, sometimes fatal bleeding ( 5.1 , 6.1 ).",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1225fd45-9b56-1671-ee77-cd0c9f2174a5",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Heparin": {
+      "class": "Unfractionated Heparin",
+      "allergy_class": "none",
+      "route": "IV/SC",
+      "monograph": "Heparin Sodium Injection is indicated for: Prophylaxis and treatment of venous thrombosis and pulmonary embolism; Prevention of postoperative deep venous thrombosis and pulmonary embolism in patients undergoing major abdominothoracic surger",
+      "atc": "B01AB",
+      "contraindications": "The use of Heparin Sodium Injection is contraindicated in patients with the following conditions: History of heparin-induced thrombocytopenia and heparin-induced thrombocytopenia and thrombosis [see Warnings and Precautions ( 5.3 )] ; Known hypersensitivity to heparin or pork products (e.g., anaphyl",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=02fb700d-a28c-4d45-b78d-382dc0d5986c",
+      "rxcui": "1361226",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Warfarin": {
+      "class": "Vitamin K Antagonist",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Warfarin sodium tablets are indicated for: Prophylaxis and treatment of venous thrombosis and its extension, pulmonary embolism (PE).",
+      "atc": "B01AA",
+      "contraindications": "Warfarin sodium is contraindicated in: Pregnancy Warfarin sodium is contraindicated in women who are pregnant except in pregnant women with mechanical heart valves, who are at high risk of thromboembolism [see Warnings and Precautions ( 5.7 ) and Use in Specific Populations ( 8.1 )] .",
+      "boxed_warning": "BLEEDING RISK Warfarin sodium can cause major or fatal bleeding [see Warnings and Precautions ( 5.1 )] .",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cbce382-9c88-4f58-ae0f-532a841e8f95",
+      "rxcui": "855288",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Nitroglycerin": {
+      "class": "Nitrate Vasodilator",
+      "allergy_class": "none",
+      "route": "SL/IV",
+      "monograph": "Nitroglycerin sublingual tablets are indicated for the acute relief of an attack or acute prophylaxis of angina pectoris due to coronary artery disease.",
+      "atc": "C05AE",
+      "contraindications": "\u2022 Use of phosphodiesterase type 5 (PDE-5) inhibitors, such as avanafil, sildenafil, tadalafil, or vardenafil, or soluble guanylate cyclase (sGC) stimulators.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=041f127e-5166-4484-bc1a-0a373d1187ae",
+      "rxcui": "198038",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Sildenafil": {
+      "class": "Phosphodiesterase 5 Inhibitor",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Sildenafil tablets are indicated for the treatment of erectile dysfunction. Sildenafil is a phosphodiesterase-5 (PDE5) inhibitor indicated for the treatment of erectile dysfunction (ED)",
+      "atc": "G04BE",
+      "contraindications": "Administration of sildenafil tablets to patients using nitric oxide donors, such as organic nitrates or organic nitrites in any form.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00ee09dd-2de0-4dc4-85f6-b51ed6eabd5b",
+      "rxcui": "314228",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Atorvastatin": {
+      "class": "HMG-CoA Reductase Inhibitor",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Atorvastatin calcium tablets are indicated: To reduce the risk of: Myocardial infarction (MI), stroke, revascularization procedures, and angina in adults with multiple risk factors for coronary heart disease (CHD) but without clinically evi",
+      "atc": "C10BA",
+      "contraindications": "Acute liver failure or decompensated cirrhosis [see Warnings and Precautions (5.3) ] Hypersensitivity to atorvastatin or any excipients in atorvastatin calcium.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00afce9b-48c9-487a-a738-e359c005c707",
+      "rxcui": "259255",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Metoprolol": {
+      "class": "beta-Adrenergic Blocker",
+      "allergy_class": "none",
+      "route": "PO/IV",
+      "monograph": "Metoprolol tartrate tablets are a beta-adrenergic blocker indicated for the treatment of: Hypertension, to lower blood pressure.",
+      "atc": "C07FB",
+      "contraindications": "Metoprolol tartrate tablets are contraindicated in severe bradycardia, second- or third-degree heart block, cardiogenic shock, systolic blood pressure <100, decompensated heart failure, sick sinus syndrome (unless a permanent pacemaker is in place), and in patients who are hypersensitive to any comp",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00de1f16-f979-4dbf-aa60-246ffac8d410",
+      "rxcui": "866924",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Propranolol": {
+      "class": "beta-Adrenergic Blocker",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Hypertension Propranolol hydrochloride tablets are indicated in the management of hypertension.",
+      "atc": "C07AA",
+      "contraindications": "Propranolol is contraindicated in 1) cardiogenic shock; 2) sinus bradycardia and greater than first degree block; 3) bronchial asthma; and 4) in patients with known hypersensitivity to propranolol hydrochloride.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=013a485a-4227-46ae-b19f-c550302fcb96",
+      "rxcui": "856448",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Labetalol": {
+      "class": "beta-Adrenergic Blocker",
+      "allergy_class": "none",
+      "route": "PO/IV",
+      "monograph": "Labetalol hydrochloride tablets USP are indicated in the management of hypertension. Labetalol hydrochloride tablets USP may be used alone or in combination with other antihypertensive agents, especially thiazide and loop diuretics.",
+      "atc": "C07AG",
+      "contraindications": "Labetalol hydrochloride is contraindicated in bronchial asthma, overt cardiac failure, greater-than-first-degree heart block, cardiogenic shock, severe bradycardia, other conditions associated with severe and prolonged hypotension, and in patients with a history of hypersensitivity to any component",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04f9dcdf-4023-48ee-9e7d-ca9366d9db72",
+      "rxcui": "896762",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Hydralazine": {
+      "class": "Arteriolar Vasodilator",
+      "allergy_class": "none",
+      "route": "IV/PO",
+      "monograph": "Essential hypertension, alone or as an adjunct.",
+      "atc": "C02DB",
+      "contraindications": "Hypersensitivity to hydrALAZINE; coronary artery disease; mitral valvular rheumatic heart disease.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=024ac6b8-5ce0-4435-9b11-b1806c511d7b",
+      "rxcui": "905225",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Nifedipine": {
+      "class": "Dihydropyridine Calcium Channel Blocker",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "& USAGE I.",
+      "atc": "C08CA",
+      "contraindications": "Known hypersensitivity reaction to nifedipine.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=09a04e5f-d3b0-4ee3-b12d-f74203262179",
+      "rxcui": "1812011",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Lisinopril": {
+      "class": "Angiotensin Converting Enzyme Inhibitor",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Lisinopril and hydrochlorothiazide tablets are indicated for the treatment of hypertension, to lower blood pressure.",
+      "atc": "C09AA",
+      "contraindications": "Lisinopril and hydrochlorothiazide tablets are contraindicated in patients who are hypersensitive to any component of this product and in patients with a history of angioedema related to previous treatment with an angiotensin converting enzyme inhibitor and in patients with hereditary or idiopathic",
+      "boxed_warning": "FETAL TOXICITY When pregnancy is detected, discontinue lisinopril and hydrochlorothiazide tablets as soon as possible. Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus. See Warnings, Fetal Toxicity .",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00b266d9-ac4a-e931-e063-6294a90a6a0b",
+      "rxcui": "197885",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Enalapril": {
+      "class": "Angiotensin Converting Enzyme Inhibitor",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Hypertension Enalapril maleate is indicated for the treatment of hypertension.",
+      "atc": "C09AA",
+      "contraindications": "Enalapril maleate is contraindicated in patients who are hypersensitive to this product and in patients with a history of angioedema related to previous treatment with an angiotensin-converting enzyme inhibitor and in patients with hereditary or idiopathic angioedema.",
+      "boxed_warning": "FETAL TOXICITY See full prescribing information for complete boxed warning. When pregnancy is detected, discontinue enalapril maleate as soon as possible. Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus. (See WARNINGS: Fetal Toxicity .)",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=074fe718-88d8-365c-e063-6394a90a299d",
+      "rxcui": "858817",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Losartan": {
+      "class": "Angiotensin 2 Receptor Blocker",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Losartan potassium tablets are an angiotensin II receptor blocker (ARB) indicated for: \u2022 Treatment of hypertension, to lower blood pressure in adults and children greater than 6 years old.",
+      "atc": "C09CA",
+      "contraindications": "Losartan potassium is contraindicated: \u2022 In patients who are hypersensitive to any component of this product. \u2022 For coadministration with aliskiren in patients with diabetes. \u2022 Hypersensitivity to any component. (4) \u2022 Coadministration with aliskiren in patients with diabetes. (4)",
+      "boxed_warning": "FETAL TOXICITY When pregnancy is detected, discontinue losartan potassium as soon as possible.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=021cd76a-b093-4704-8410-5e7d01e20a54",
+      "rxcui": "979480",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Magnesium Sulfate": {
+      "class": "electrolyte / anticonvulsant",
+      "allergy_class": "none",
+      "route": "IV",
+      "monograph": "Magnesium Sulfate in 5% Dextrose Injection is indicated for: \u2022 Prevention of eclampsia in patients with preeclampsia \u2022 Treatment of seizures and prevention of recurrent seizures in patients with eclampsia Magnesium Sulfate in 5% Dextrose In",
+      "atc": "A06AD",
+      "contraindications": "Magnesium Sulfate in 5% Dextrose Injection is contraindicated in patients: \u2022 with heart block or myocardial damage \u2022 in diabetic coma \u2022 with myasthenia gravis [see Warnings and Precautions (5.6) ] \u2022 Heart block or myocardial damage ( 4 ) \u2022 Diabetic coma ( 4 ) \u2022 Myasthenia gravis ( 4 , 5.6 )",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03ebeabb-8386-4af4-3086-bdf3c3fc4a5a",
+      "rxcui": "829757",
+      "grounded": true,
+      "sources": [
+        "openfda"
+      ]
+    },
+    "Ibuprofen": {
+      "class": "Nonsteroidal Anti-inflammatory Drug",
+      "allergy_class": "nsaid",
+      "route": "PO",
+      "monograph": "Uses temporarily relieves minor aches and pains due to: headache toothache backache menstrual cramps the common cold muscular aches minor pain of arthritis temporarily reduces fever",
+      "atc": "M01AE",
+      "atc_allergy_family": "nsaid",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00653b7c-7099-487e-9a01-e89781c21323",
+      "rxcui": "310965",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Naproxen": {
+      "class": "Nonsteroidal Anti-inflammatory Drug",
+      "allergy_class": "nsaid",
+      "route": "PO",
+      "monograph": "Naproxen tablets and naproxen sodium tablets are indicated for: the relief of the signs and symptoms of: \u2022 rheumatoid arthritis \u2022 osteoarthritis \u2022 ankylosing spondylitis \u2022 Polyarticular Juvenile Idiopathic Arthritis Naproxen tablets and nap",
+      "atc": "M01AE",
+      "atc_allergy_family": "nsaid",
+      "contraindications": "Naproxen tablets and naproxen sodium tablets are contraindicated in the following patients: \u2022 Known hypersensitivity (e.g., anaphylactic reactions and serious skin reactions) to naproxen or any components of the drug product [ see Warnings and Precautions ( 5.7 , 5.9 ) ] \u2022 History of asthma, urticar",
+      "boxed_warning": "RISK OF SERIOUS CARDIOVASCULAR AND GASTROINTESTINAL EVENTS Cardiovascular Thrombotic Events \u2022 Nonsteroidal anti-inflammatory drugs (NSAIDs) cause an increased risk of serious cardiovascular thrombotic events, including myocardial infarction and stroke, which can be fatal.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000155a8-709c-44e5-a75f-cd890f3a7caf",
+      "rxcui": "198014",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Diclofenac": {
+      "class": "Nonsteroidal Anti-inflammatory Drug",
+      "allergy_class": "nsaid",
+      "route": "PO",
+      "monograph": "Uses for the temporary relief of arthritis pain ONLY in the following areas: hand, wrist, elbow (upper body areas) foot, ankle, knee (lower body areas) this product may take up to 7 days to work for arthritis pain; it is not for immediate r",
+      "atc": "M01AB",
+      "atc_allergy_family": "nsaid",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=005299ac-b6de-511f-e063-6294a90a29e0",
+      "rxcui": "855633",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Acetaminophen": {
+      "class": "analgesic / antipyretic",
+      "allergy_class": "opioid",
+      "route": "PO",
+      "monograph": "Uses temporarily relieves minor aches and pains due to: headache the common cold backache minor pain of arthritis toothache muscular aches premenstrual and menstrual cramps temporarily reduces fever",
+      "atc": "N02AJ",
+      "atc_allergy_family": "opioid",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0005aafa-08f8-4990-a54d-cc097195708f",
+      "rxcui": "198440",
+      "grounded": true,
+      "sources": [
+        "openfda"
+      ]
+    },
+    "Morphine": {
+      "class": "Opioid Agonist",
+      "allergy_class": "opioid",
+      "route": "IV/PO",
+      "monograph": "Morphine sulfate tablets are indicated for the management of: adult and pediatric patients weighing at least 50 kg and above with acute pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate.",
+      "atc": "N02AA",
+      "atc_allergy_family": "opioid",
+      "contraindications": "Morphine sulfate tablets are contraindicated in patients with: Significant respiratory depression [see Warnings and Precautions ( 5.2 )].",
+      "boxed_warning": "SERIOUS AND LIFE-THREATENING RISKS FROM USE OF MORPHINE SULFATE TABLETS Addiction, Abuse, and Misuse Because the use of morphine sulfate tablets exposes patients and other users to the risks of opioid addiction, abuse, and misuse, which can lead to overdose and death, assess each patient\u2019s risk prio",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=07593aa4-f2c4-4d6e-b186-ab2a4ecaa38a",
+      "rxcui": "892582",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Ondansetron": {
+      "class": "Serotonin-3 Receptor Antagonist",
+      "allergy_class": "none",
+      "route": "IV/PO",
+      "monograph": "Ondansetron tablets are indicated for the prevention of nausea and vomiting associated with: highly emetogenic cancer chemotherapy, including cisplatin greater than or equal to 50 mg/m 2 .",
+      "atc": "A04AA",
+      "contraindications": "Ondansetron is contraindicated in patients: known to have hypersensitivity (e.g., anaphylaxis) to ondansetron or any of the components of the formulation [see Adverse Reactions (6.2) ] receiving concomitant apomorphine due to the risk of profound hypotension and loss of consciousness Patients known",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00327696-c496-4c83-a63e-9e29fd6246d4",
+      "rxcui": "198052",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Insulin (regular)": {
+      "class": "short-acting insulin",
+      "allergy_class": "none",
+      "route": "IV/SC",
+      "monograph": "Mainstay of DKA management after fluids and potassium check."
+    },
+    "Normal Saline": {
+      "class": "crystalloid fluid",
+      "allergy_class": "none",
+      "route": "IV",
+      "monograph": "Isotonic resuscitation fluid."
+    },
+    "Potassium Chloride": {
+      "class": "electrolyte replacement",
+      "allergy_class": "none",
+      "route": "IV/PO",
+      "monograph": "Potassium Chloride Extended-Release Tablets are indicated for the treatment and prophylaxis of hypokalemia with or without metabolic alkalosis, in patients for whom dietary management with potassium-rich foods or diuretic dose reduction is",
+      "atc": "A12CX",
+      "contraindications": "Potassium chloride is contraindicated in patients on triamterene and amiloride. Concomitant use with triamterene and amiloride (4)",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00615fad-ad3b-46e8-a89d-48290d937ae2",
+      "rxcui": "312529",
+      "grounded": true,
+      "sources": [
+        "openfda"
+      ]
+    },
+    "Metformin": {
+      "class": "Biguanide",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "is a combination of sitagliptin, a dipeptidyl peptidase-4 (DPP-4) inhibitor, and metformin hydrochloride (HCl), a biguanide, indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+      "atc": "A10BD",
+      "contraindications": "Severe renal impairment: (eGFR below 30 mL/min/1.73 m 2 ) ( 4) Metabolic acidosis, including diabetic ketoacidosis.",
+      "boxed_warning": "LACTIC ACIDOSIS WARNING: LACTIC ACIDOSIS See full prescribing information for complete boxed warning .",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0098dec4-f0e5-45d5-8aa4-5d0faf9ab142",
+      "rxcui": "861769",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Glyburide": {
+      "class": "Sulfonylurea",
+      "allergy_class": "sulfa",
+      "route": "PO",
+      "monograph": "Glyburide tablets, USP is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.",
+      "atc": "A10BB",
+      "contraindications": "Glyburide tablets are contraindicated in patients with: Known hypersensitivity or allergy to the drug.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05341afe-5b7a-462a-a196-689cb09f83fc",
+      "rxcui": "310537",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Albuterol": {
+      "class": "beta2-Adrenergic Agonist",
+      "allergy_class": "none",
+      "route": "INH",
+      "monograph": "Albuterol Sulfate HFA is a beta 2 -adrenergic agonist indicated for: Treatment or prevention of bronchospasm in adult and pediatric patients aged 4 years and older with reversible obstructive airway disease.",
+      "atc": "R03AC",
+      "contraindications": "Albuterol Sulfate HFA is contraindicated in patients with a history of hypersensitivity to any of the ingredients [see Warnings and Precautions ( 5.6 ), Description ( 11 )] . Hypersensitivity to any ingredient. ( 4 )",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04c8a345-0a0d-5a01-e063-6294a90a40d2",
+      "rxcui": "2123076",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Ipratropium": {
+      "class": "Anticholinergic",
+      "allergy_class": "none",
+      "route": "INH",
+      "monograph": "Adjunct bronchodilator in severe asthma exacerbations.",
+      "atc": "R03AL",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05c56190-e346-4674-a4f8-049ce632ce2d",
+      "rxcui": "1797833",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Prednisone": {
+      "class": "Corticosteroid",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Prednisone tablets are indicated in the following conditions: 1.",
+      "atc": "H02AB",
+      "contraindications": "Systemic fungal infections and known hypersensitivity to components.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0060b86b-0b79-4c54-a7be-97683a933a05",
+      "rxcui": "312617",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Prednisolone": {
+      "class": "Corticosteroid",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "\u00ae is indicated for the treatment of steroid-responsive inflammation of the palpebral and bulbar conjunctiva, cornea, and anterior segment of the globe.",
+      "atc": "H02AB",
+      "contraindications": "\u00ae suspension is contraindicated in acute untreated purulent ocular infections, in most viral diseases of the cornea and conjunctiva including epithelial herpes simplex keratitis (dendritic keratitis), vaccinia, and varicella, and also in mycobacterial infection of the eye and fungal diseases of ocul",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00a5aa88-e361-4ea7-8922-530c738b726e",
+      "rxcui": "1376336",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Betamethasone": {
+      "class": "Corticosteroid",
+      "allergy_class": "none",
+      "route": "IM",
+      "monograph": "Betamethasone dipropionate cream (augmented) is a corticosteroid indicated for the relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses in patients 13 years of age or older.",
+      "atc": "D07BC",
+      "contraindications": "Betamethasone dipropionate cream (augmented), is contraindicated in patients who are hypersensitive to betamethasone dipropionate, to other corticosteroids, or to any ingredient in this preparation. Hypersensitivity to any component of this medicine. ( 4 )",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000ae256-a337-4903-845b-003777a4efa8",
+      "rxcui": "848176",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Oxygen": {
+      "class": "medical gas",
+      "allergy_class": "none",
+      "route": "INH",
+      "monograph": "Titrate to target saturations; supportive in hypoxaemia.",
+      "atc": "V03AN",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=007530ff-787e-4f37-bc9c-23193d006708",
+      "rxcui": "348831",
+      "grounded": true,
+      "sources": [
+        "openfda"
+      ]
+    },
+    "Hydrocortisone": {
+      "class": "Corticosteroid",
+      "allergy_class": "none",
+      "route": "TOP",
+      "monograph": "Uses \u2022 temporarily relieves itching associated with minor skin irritations, inflammation, and rashes due to: \u2022 eczema \u2022 psoriasis \u2022 poison ivy, oak, sumac \u2022 insect bites \u2022 detergents \u2022 jewelry \u2022 cosmetics \u2022 soaps \u2022 seborrheic dermatitis \u2022 t",
+      "atc": "D07XA",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00040bfe-001a-484e-bec0-e21e8b27f369",
+      "rxcui": "106258",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Triamcinolone": {
+      "class": "Corticosteroid",
+      "allergy_class": "none",
+      "route": "TOP",
+      "monograph": "& USAGE Topical corticosteroids are indicated for the relief of the inflammatory and pruritic manifestations of corticosteroid-responsive dermatoses.",
+      "atc": "D07AB",
+      "contraindications": "Topical corticosteroids are contraindicated in those patients with a history of hypersensitivity to any of the components of the preparation.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00cb6cd0-da04-4c87-a60c-c891666a6574",
+      "rxcui": "1014314",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Tacrolimus": {
+      "class": "Calcineurin Inhibitor Immunosuppressant",
+      "allergy_class": "none",
+      "route": "TOP",
+      "monograph": "Tacrolimus extended-release capsules is indicated for the prophylaxis of organ rejection in kidney transplant patients in combination with other immunosuppressants in adult patients who can swallow capsules intact [see Clinical Studies ( 14",
+      "atc": "L04AD",
+      "contraindications": "Tacrolimus extended-release capsules is contraindicated in patients with known hypersensitivity to tacrolimus [see Adverse Reactions ( 6.2 )] . Known hypersensitivity to tacrolimus. ( 4 )",
+      "boxed_warning": "MALIGNANCIES AND SERIOUS INFECTIONS IN TRANSPLANT PATIENTS; AND INCREASED MORTALITY IN FEMALE LIVER TRANSPLANT PATIENTS Increased risk for developing serious infections and malignancies with tacrolimus extended-release capsulest or other immunosuppressants that may lead to hospitalization or death.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=08cf2861-2483-405d-a872-a88a5c235f9a",
+      "rxcui": "1431971",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Topical Emollient": {
+      "class": "moisturiser",
+      "allergy_class": "none",
+      "route": "TOP",
+      "monograph": "Foundation of eczema care; restores the skin barrier."
+    },
+    "Cetirizine": {
+      "class": "Histamine-1 Receptor Antagonist",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Uses temporarily relieves these symptoms due to hay fever or other upper respiratory allergies: runny nose sneezing itchy, watery eyes itching of the nose or throat",
+      "atc": "R06AE",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=013ce40e-37c9-4b84-b530-ed895f60ce0e",
+      "rxcui": "2558501",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Diphenhydramine": {
+      "class": "Histamine-1 Receptor Antagonist",
+      "allergy_class": "none",
+      "route": "PO",
+      "monograph": "Uses temporarily relieves these symptoms due to hay fever or other respiratory allergies: \u25a0 sneezing \u25a0 itching of the nose or throat \u25a0 runny nose \u25a0 itchy watery eyes \u25a0temporarily relieves these symptoms due to the common cold: \u25a0 sneezing \u25a0",
+      "atc": "R06AA",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0035e6a4-b3ef-4e0b-aa7f-7453dd065f4d",
+      "rxcui": "1049906",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Methotrexate": {
+      "class": "Folate Analog Metabolic Inhibitor",
+      "allergy_class": "none",
+      "route": "IM",
+      "monograph": "Methotrexate tablets are a diydrofolate reductase inhibitor indicated for the: \u2022 Treatment of adults and pediatric patients with acute lymphoblastic leukemia (ALL) as part of a combination chemotherapy maintenance regimen (1.1) \u2022 Treatment",
+      "atc": "L01BA",
+      "contraindications": "Methotrexate tablets are contraindicated in: \u2022 Pregnant women receiving methotrexate tablets for treatment of non-neoplastic diseases [see Warnings and Precautions (5.1), and Use in Specific Populations (8.1, 8.3)].",
+      "boxed_warning": "EMBRYO-FETAL TOXICITY, HYPERSENSITIVITY REACTIONS, SEVERE ADVERSE REACTIONS, and RISK OF MEDICATION ERRORS \u2022 Methotrexate tablets can cause embryo-fetal toxicity, including fetal death.",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=04a95db9-a124-4b97-bd71-1c37a6b3b0c8",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Misoprostol": {
+      "class": "Prostaglandin E1 Analog",
+      "allergy_class": "none",
+      "route": "PO/PV",
+      "monograph": "Diclofenac sodium and misoprostol delayed-release tablets are indicated for treatment of the signs and symptoms of osteoarthritis or rheumatoid arthritis in adult patients at high risk of developing NSAID-induced gastric and duodenal ulcers",
+      "atc": "A02BB",
+      "contraindications": "Diclofenac sodium and misoprostol delayed-release tablets are contraindicated in the following patients: Pregnancy.",
+      "boxed_warning": "RISK OF UTERINE RUPTURE, ABORTION, PREMATURE BIRTH, BIRTH DEFECTS; SERIOUS CARDIOVASCULAR EVENTS; AND SERIOUS GASTROINTESTINAL EVENTS Uterine Rupture, Abortion, Premature Birth, and Birth Defects Administration of misoprostol, a component of diclofenac sodium and misoprostol delayed-release tablets",
+      "label_url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d6509a1-7af8-473b-8951-c19439274379",
+      "rxcui": "1359105",
+      "grounded": true,
+      "sources": [
+        "openfda",
+        "rxnorm"
+      ]
+    },
+    "Rho(D) Immune Globulin": {
+      "class": "Human Immunoglobulin G",
+      "allergy_class": "none",
+      "route": "IM",
+      "monograph": "Prevents Rh alloimmunisation in Rh-negative pregnant patients.",
+      "atc": "J06BB",
+      "grounded": true,
+      "sources": [
+        "rxnorm"
+      ]
+    },
+    "Normal Saline (nasal)": {
+      "class": "saline drops",
+      "allergy_class": "none",
+      "route": "INTRANASAL",
+      "monograph": "Nasal saline and suction for infant congestion."
+    },
+    "Skin Swab": {
+      "class": "diagnostic",
+      "allergy_class": "none",
+      "route": "-",
+      "monograph": "Not a drug."
+    }
+  },
+  "interactions": {
+    "Hydrocortisone": {
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Hydrocortisone\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Hydrocortisone\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Hydrocortisone\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Hydrocortisone\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "Hydrocortisone\u2013Levofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Hydrocortisone\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Hydrocortisone\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Insulin (regular)": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Doxycycline": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Doxycycline interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Metformin": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Metformin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Triamcinolone (ophthalmic) interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Betamethasone": {
+        "severity": "minor",
+        "description": "Insulin human (zinc extended)\u2013Betamethasone (topical) interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ciprofloxacin": {
+        "severity": "major",
+        "description": "Insulin human (zinc extended)\u2013Ciprofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Ipratropium": {
+        "severity": "moderate",
+        "description": "Insulin human (inhalation, rapid acting)\u2013Ipratropium interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Enalapril": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Enalapril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Losartan interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Sulfamethoxazole interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Labetalol": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Labetalol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "Insulin human (zinc extended)\u2013Levofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Metoprolol": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Metoprolol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Potassium Chloride": {
+        "severity": "minor",
+        "description": "Insulin human (zinc extended)\u2013Potassium chloride interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Prednisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Propranolol": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Propranolol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Insulin human (zinc extended)\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Metformin": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Betamethasone": {
+        "severity": "minor",
+        "description": "Metformin\u2013Betamethasone (topical) interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Cephalexin": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Cephalexin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ciprofloxacin": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Ciprofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diclofenac": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Diclofenac interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Enalapril": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Enalapril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Levofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Prednisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "minor",
+        "description": "Metformin\u2013Triamcinolone (topical) interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Trimethoprim interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Vancomycin": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Vancomycin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Metformin\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Doxycycline": {
+      "Amoxicillin-Clavulanate": {
+        "severity": "moderate",
+        "description": "Doxycycline\u2013Amoxicillin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ampicillin": {
+        "severity": "moderate",
+        "description": "Doxycycline\u2013Ampicillin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Dicloxacillin": {
+        "severity": "moderate",
+        "description": "Doxycycline\u2013Dicloxacillin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Magnesium Sulfate": {
+        "severity": "moderate",
+        "description": "Doxycycline\u2013Magnesium sulfate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "moderate",
+        "description": "Doxycycline\u2013Methotrexate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Piperacillin-Tazobactam": {
+        "severity": "moderate",
+        "description": "Doxycycline\u2013Piperacillin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Doxycycline\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Betamethasone": {
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ciprofloxacin": {
+        "severity": "major",
+        "description": "Betamethasone\u2013Ciprofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Diclofenac": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Diclofenac interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Enalapril": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Enalapril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "minor",
+        "description": "Betamethasone (topical)\u2013Glyburide interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Labetalol": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Labetalol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "Betamethasone\u2013Levofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Losartan interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Magnesium Sulfate": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Magnesium sulfate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Methotrexate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Propranolol": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Propranolol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Betamethasone\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Magnesium Sulfate": {
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Magnesium sulfate\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Magnesium sulfate\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Gentamicin": {
+        "severity": "major",
+        "description": "Magnesium sulfate\u2013Gentamicin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "moderate",
+        "description": "Magnesium sulfate\u2013Levofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Magnesium sulfate\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Morphine": {
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Cetirizine": {
+        "severity": "moderate",
+        "description": "Morphine (liposomal)\u2013Cetirizine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Metformin": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Metformin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Clopidogrel": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Clopidogrel interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Morphine (liposomal)\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Enalapril": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Enalapril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Labetalol": {
+        "severity": "moderate",
+        "description": "Morphine (liposomal)\u2013Labetalol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Losartan interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nitroglycerin": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Nitroglycerin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ondansetron": {
+        "severity": "moderate",
+        "description": "Morphine (liposomal)\u2013Ondansetron interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Propranolol": {
+        "severity": "moderate",
+        "description": "Morphine (liposomal)\u2013Propranolol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Morphine\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Prednisolone": {
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Prednisolone\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Prednisolone\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Prednisolone\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "Prednisolone\u2013Levofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Prednisolone\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Prednisone": {
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Magnesium Sulfate": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Magnesium sulfate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "Prednisone\u2013Levofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Losartan interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Prednisone\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Triamcinolone": {
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Triamcinolone\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Triamcinolone (ophthalmic)\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Triamcinolone (ophthalmic)\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Triamcinolone\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "Triamcinolone\u2013Levofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Triamcinolone\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "moderate",
+        "description": "Triamcinolone\u2013Losartan interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Magnesium Sulfate": {
+        "severity": "moderate",
+        "description": "Triamcinolone (ophthalmic)\u2013Magnesium sulfate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Triamcinolone (ophthalmic)\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Triamcinolone\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Triamcinolone (ophthalmic)\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Glyburide": {
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Glyburide\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "Glyburide\u2013Levofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Glyburide\u2013Heparin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Ibuprofen": {
+      "Levofloxacin": {
+        "severity": "moderate",
+        "description": "Ibuprofen\u2013Levofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Ibuprofen\u2013Heparin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Ibuprofen\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Ibuprofen\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Ibuprofen\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Methotrexate": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      }
+    },
+    "Potassium Chloride": {
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Potassium chloride\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "major",
+        "description": "Potassium chloride\u2013Diphenhydramine interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Potassium chloride\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Vancomycin": {
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Vancomycin\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diclofenac": {
+        "severity": "moderate",
+        "description": "Vancomycin\u2013Diclofenac interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Vancomycin\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "moderate",
+        "description": "Vancomycin\u2013Methotrexate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Gentamicin": {
+        "severity": "moderate",
+        "description": "Vancomycin\u2013Gentamicin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "major",
+        "description": "Vancomycin\u2013Tacrolimus interaction (major, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Ciprofloxacin": {
+      "Hydrocortisone": {
+        "severity": "major",
+        "description": "Ciprofloxacin\u2013Hydrocortisone interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "major",
+        "description": "Ciprofloxacin\u2013Triamcinolone interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "major",
+        "description": "Ciprofloxacin\u2013Glyburide interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Magnesium Sulfate": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin\u2013Magnesium sulfate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Metronidazole": {
+        "severity": "minor",
+        "description": "Ciprofloxacin\u2013Metronidazole interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ondansetron": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin\u2013Ondansetron interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "major",
+        "description": "Ciprofloxacin\u2013Prednisolone interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "major",
+        "description": "Ciprofloxacin\u2013Prednisone interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin raises INR on warfarin."
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Atorvastatin": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin\u2013Atorvastatin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diclofenac": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin\u2013Diclofenac interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "minor",
+        "description": "Ciprofloxacin\u2013Sulfamethoxazole interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "moderate",
+        "description": "Ciprofloxacin\u2013Methotrexate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Diclofenac": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Diclofenac (ophthalmic)\u2013Hydrocortisone (ophthalmic) interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Triamcinolone (ophthalmic) interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Levofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Potassium Chloride": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Potassium chloride interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Diclofenac (ophthalmic)\u2013Prednisolone (ophthalmic) interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Prednisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Clopidogrel": {
+        "severity": "moderate",
+        "description": "Diclofenac (ophthalmic)\u2013Clopidogrel interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Diclofenac (ophthalmic)\u2013Heparin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Diclofenac (ophthalmic)\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Diclofenac (topical)\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Labetalol": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Labetalol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Losartan interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ceftriaxone": {
+        "severity": "minor",
+        "description": "Diclofenac\u2013Ceftriaxone interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Gentamicin": {
+        "severity": "moderate",
+        "description": "Diclofenac\u2013Gentamicin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "major",
+        "description": "Diclofenac\u2013Tacrolimus interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      }
+    },
+    "Enalapril": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Triamcinolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Potassium Chloride": {
+        "severity": "major",
+        "description": "Enalapril\u2013Potassium chloride interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Prednisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Heparin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "minor",
+        "description": "Enalapril\u2013Nifedipine interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diclofenac": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Diclofenac interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nitroglycerin": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Nitroglycerin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Enalapril\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Labetalol": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Labetalol\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "moderate",
+        "description": "Labetalol\u2013Triamcinolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Labetalol\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Labetalol\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "moderate",
+        "description": "Labetalol\u2013Prednisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "minor",
+        "description": "Labetalol\u2013Warfarin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "minor",
+        "description": "Labetalol\u2013Ticagrelor interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Additive blood-pressure lowering \u2014 monitor for hypotension."
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Labetalol\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Labetalol\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Labetalol\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "minor",
+        "description": "Labetalol\u2013Hydralazine interaction (minor, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Lisinopril": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Potassium Chloride": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Heparin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "minor",
+        "description": "Lisinopril\u2013Nifedipine interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nitroglycerin": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Nitroglycerin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Lisinopril\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "moderate",
+        "description": "Both raise potassium \u2014 hyperkalemia risk."
+      },
+      "Losartan": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      }
+    },
+    "Losartan": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Losartan\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Potassium Chloride": {
+        "severity": "major",
+        "description": "Losartan\u2013Potassium chloride interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Losartan\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Losartan\u2013Heparin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Losartan\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Losartan\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "major",
+        "description": "Losartan\u2013Lisinopril interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Losartan\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Losartan\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Methotrexate": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Amoxicillin-Clavulanate": {
+        "severity": "major",
+        "description": "Methotrexate\u2013Amoxicillin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Triamcinolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Levofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Prednisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "minor",
+        "description": "Methotrexate\u2013Warfarin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "NSAIDs reduce methotrexate clearance, increasing toxicity."
+      },
+      "Atorvastatin": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Atorvastatin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Enalapril": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Enalapril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Labetalol": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Labetalol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diclofenac": {
+        "severity": "major",
+        "description": "Methotrexate\u2013Diclofenac interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "major",
+        "description": "Methotrexate\u2013Tacrolimus interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "major",
+        "description": "Methotrexate\u2013Naproxen interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Nitrofurantoin": {
+        "severity": "moderate",
+        "description": "Methotrexate\u2013Nitrofurantoin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Aspirin": {
+        "severity": "moderate",
+        "description": "Salicylates increase methotrexate levels and toxicity."
+      }
+    },
+    "Metoprolol": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Triamcinolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Morphine": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Morphine (liposomal) interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Betamethasone": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Betamethasone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Prednisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "minor",
+        "description": "Metoprolol\u2013Ticagrelor interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Additive hypotension and bradycardia."
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diclofenac": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Diclofenac interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ciprofloxacin": {
+        "severity": "minor",
+        "description": "Metoprolol\u2013Ciprofloxacin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Metoprolol\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "minor",
+        "description": "Metoprolol\u2013Hydralazine interaction (minor, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Propranolol": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Triamcinolone": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Triamcinolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisone": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Prednisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "minor",
+        "description": "Propranolol\u2013Warfarin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "minor",
+        "description": "Propranolol\u2013Ticagrelor interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diclofenac": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Diclofenac interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Propranolol\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "minor",
+        "description": "Propranolol\u2013Hydralazine interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Insulin (regular)": {
+        "severity": "moderate",
+        "description": "Beta-blockade masks hypoglycemia symptoms."
+      }
+    },
+    "Warfarin": {
+      "Hydrocortisone": {
+        "severity": "moderate",
+        "description": "Warfarin\u2013Hydrocortisone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Amoxicillin-Clavulanate": {
+        "severity": "moderate",
+        "description": "Warfarin\u2013Amoxicillin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Metronidazole": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Warfarin\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "Warfarin\u2013Levofloxacin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Warfarin\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "major",
+        "description": "NSAID plus anticoagulant markedly increases GI bleeding."
+      },
+      "Atorvastatin": {
+        "severity": "minor",
+        "description": "Warfarin\u2013Atorvastatin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Cefazolin": {
+        "severity": "moderate",
+        "description": "Warfarin\u2013Cefazolin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Cefoxitin": {
+        "severity": "moderate",
+        "description": "Warfarin\u2013Cefoxitin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ceftriaxone": {
+        "severity": "moderate",
+        "description": "Warfarin\u2013Ceftriaxone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Clopidogrel": {
+        "severity": "major",
+        "description": "Warfarin\u2013Clopidogrel interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "major",
+        "description": "Warfarin\u2013Naproxen interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Heparin": {
+        "severity": "major",
+        "description": "Warfarin\u2013Heparin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Warfarin\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Aspirin": {
+        "severity": "major",
+        "description": "Additive bleeding risk; avoid or monitor closely."
+      },
+      "Amoxicillin": {
+        "severity": "moderate",
+        "description": "Antibiotics can raise INR \u2014 recheck INR."
+      },
+      "Ciprofloxacin": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      }
+    },
+    "Azithromycin": {
+      "Amoxicillin-Clavulanate": {
+        "severity": "minor",
+        "description": "Azithromycin\u2013Amoxicillin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "moderate",
+        "description": "Azithromycin\u2013Levofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Metronidazole": {
+        "severity": "minor",
+        "description": "Azithromycin\u2013Metronidazole interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ondansetron": {
+        "severity": "moderate",
+        "description": "Additive QT prolongation \u2014 check QTc/electrolytes."
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Azithromycin\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Atorvastatin": {
+        "severity": "moderate",
+        "description": "Azithromycin\u2013Atorvastatin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Azithromycin\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "minor",
+        "description": "Azithromycin\u2013Sulfamethoxazole interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ampicillin": {
+        "severity": "minor",
+        "description": "Azithromycin\u2013Ampicillin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ciprofloxacin": {
+        "severity": "moderate",
+        "description": "Azithromycin\u2013Ciprofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Dicloxacillin": {
+        "severity": "minor",
+        "description": "Azithromycin\u2013Dicloxacillin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "moderate",
+        "description": "Azithromycin\u2013Methotrexate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Piperacillin-Tazobactam": {
+        "severity": "minor",
+        "description": "Azithromycin\u2013Piperacillin interaction (minor, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Sildenafil": {
+      "Morphine": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Morphine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Enalapril": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Enalapril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Labetalol": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Labetalol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Lisinopril interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Losartan interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Metoprolol": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Metoprolol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Propranolol": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Propranolol interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nitroglycerin": {
+        "severity": "major",
+        "description": "Sildenafil\u2013Nitroglycerin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ciprofloxacin": {
+        "severity": "moderate",
+        "description": "Sildenafil\u2013Ciprofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Metronidazole": {
+      "Atorvastatin": {
+        "severity": "moderate",
+        "description": "Metronidazole\u2013Atorvastatin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Metronidazole\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "minor",
+        "description": "Metronidazole\u2013Sulfamethoxazole interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "minor",
+        "description": "Metronidazole\u2013Levofloxacin interaction (minor, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Nitrofurantoin": {
+      "Metronidazole": {
+        "severity": "moderate",
+        "description": "Nitrofurantoin\u2013Metronidazole interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Atorvastatin": {
+        "severity": "moderate",
+        "description": "Nitrofurantoin\u2013Atorvastatin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Nitrofurantoin\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Tacrolimus": {
+      "Metronidazole": {
+        "severity": "moderate",
+        "description": "Tacrolimus\u2013Metronidazole interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "moderate",
+        "description": "Tacrolimus\u2013Levofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ondansetron": {
+        "severity": "moderate",
+        "description": "Tacrolimus\u2013Ondansetron interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Tacrolimus\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Tacrolimus\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Tacrolimus\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "major",
+        "description": "Tacrolimus\u2013Ibuprofen interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Atorvastatin": {
+        "severity": "moderate",
+        "description": "Tacrolimus\u2013Atorvastatin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "moderate",
+        "description": "Tacrolimus\u2013Sulfamethoxazole interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Naproxen": {
+      "Misoprostol": {
+        "severity": "minor",
+        "description": "Naproxen\u2013Misoprostol interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Levofloxacin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Prednisolone": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Prednisolone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Heparin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Gentamicin": {
+        "severity": "moderate",
+        "description": "Naproxen\u2013Gentamicin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "major",
+        "description": "Naproxen\u2013Tacrolimus interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Methotrexate": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      }
+    },
+    "Piperacillin-Tazobactam": {
+      "Vancomycin": {
+        "severity": "major",
+        "description": "Piperacillin\u2013Vancomycin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "minor",
+        "description": "Piperacillin\u2013Heparin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Piperacillin\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Gentamicin": {
+        "severity": "moderate",
+        "description": "Piperacillin\u2013Gentamicin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "major",
+        "description": "Piperacillin\u2013Methotrexate interaction (major, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Trimethoprim-Sulfamethoxazole": {
+      "Glyburide": {
+        "severity": "moderate",
+        "description": "Sulfamethoxazole\u2013Glyburide interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "minor",
+        "description": "Sulfamethoxazole\u2013Levofloxacin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Potassium Chloride": {
+        "severity": "major",
+        "description": "Trimethoprim\u2013Potassium chloride interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Trimethoprim\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Enalapril": {
+        "severity": "major",
+        "description": "Trimethoprim\u2013Enalapril interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Lisinopril": {
+        "severity": "major",
+        "description": "Trimethoprim\u2013Lisinopril interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Losartan": {
+        "severity": "major",
+        "description": "Trimethoprim\u2013Losartan interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "moderate",
+        "description": "Trimethoprim\u2013Tacrolimus interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "major",
+        "description": "Trimethoprim\u2013Methotrexate interaction (major, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Ondansetron": {
+      "Trimethoprim-Sulfamethoxazole": {
+        "severity": "minor",
+        "description": "Ondansetron\u2013Sulfamethoxazole interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Levofloxacin": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Metronidazole": {
+        "severity": "minor",
+        "description": "Ondansetron\u2013Metronidazole interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Azithromycin": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Ciprofloxacin": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      }
+    },
+    "Acetaminophen": {
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Acetaminophen\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Propranolol": {
+        "severity": "minor",
+        "description": "Acetaminophen\u2013Propranolol interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "moderate",
+        "description": "Acetaminophen\u2013Methotrexate interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Nifedipine": {
+      "Ticagrelor": {
+        "severity": "minor",
+        "description": "Nifedipine\u2013Ticagrelor interaction (minor, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Clopidogrel": {
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Clopidogrel\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Atorvastatin": {
+        "severity": "moderate",
+        "description": "Clopidogrel\u2013Atorvastatin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Heparin": {
+        "severity": "minor",
+        "description": "Clopidogrel\u2013Heparin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Naproxen": {
+        "severity": "moderate",
+        "description": "Clopidogrel\u2013Naproxen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Clopidogrel\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Ampicillin": {
+      "Heparin": {
+        "severity": "minor",
+        "description": "Ampicillin\u2013Heparin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Ampicillin\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Clindamycin": {
+        "severity": "minor",
+        "description": "Ampicillin\u2013Clindamycin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Gentamicin": {
+        "severity": "moderate",
+        "description": "Ampicillin\u2013Gentamicin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "major",
+        "description": "Ampicillin\u2013Methotrexate interaction (major, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Atorvastatin": {
+      "Ticagrelor": {
+        "severity": "minor",
+        "description": "Atorvastatin\u2013Ticagrelor interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Atorvastatin\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Atorvastatin\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Heparin": {
+      "Cefazolin": {
+        "severity": "minor",
+        "description": "Heparin\u2013Cefazolin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Cefoxitin": {
+        "severity": "minor",
+        "description": "Heparin\u2013Cefoxitin interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ceftriaxone": {
+        "severity": "minor",
+        "description": "Heparin\u2013Ceftriaxone interaction (minor, DDInter).",
+        "source": "ddinter"
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Heparin\u2013Ticagrelor interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Cephalexin": {
+      "Warfarin": {
+        "severity": "moderate",
+        "description": "Cephalexin\u2013Warfarin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Dicloxacillin": {
+      "Warfarin": {
+        "severity": "major",
+        "description": "Dicloxacillin\u2013Warfarin interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Methotrexate": {
+        "severity": "major",
+        "description": "Dicloxacillin\u2013Methotrexate interaction (major, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Nitroglycerin": {
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Nitroglycerin\u2013Heparin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Nifedipine": {
+        "severity": "moderate",
+        "description": "Nitroglycerin\u2013Nifedipine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Nitroglycerin\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Sildenafil": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      }
+    },
+    "Gentamicin": {
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Gentamicin\u2013Ibuprofen interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Cefazolin": {
+        "severity": "moderate",
+        "description": "Gentamicin\u2013Cefazolin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Cefoxitin": {
+        "severity": "moderate",
+        "description": "Gentamicin\u2013Cefoxitin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Ceftriaxone": {
+        "severity": "moderate",
+        "description": "Gentamicin\u2013Ceftriaxone interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Clindamycin": {
+        "severity": "moderate",
+        "description": "Gentamicin\u2013Clindamycin interaction (moderate, DDInter).",
+        "source": "ddinter"
+      },
+      "Tacrolimus": {
+        "severity": "major",
+        "description": "Gentamicin\u2013Tacrolimus interaction (major, DDInter).",
+        "source": "ddinter"
+      },
+      "Vancomycin": {
+        "severity": "moderate",
+        "description": "Additive nephrotoxicity \u2014 monitor renal function and levels."
+      }
+    },
+    "Diphenhydramine": {
+      "Hydralazine": {
+        "severity": "moderate",
+        "description": "Diphenhydramine\u2013Hydralazine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Cetirizine": {
+      "Diphenhydramine": {
+        "severity": "moderate",
+        "description": "Cetirizine\u2013Diphenhydramine interaction (moderate, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Ipratropium": {
+      "Diphenhydramine": {
+        "severity": "minor",
+        "description": "Ipratropium (nasal)\u2013Diphenhydramine interaction (minor, DDInter).",
+        "source": "ddinter"
+      }
+    },
+    "Aspirin": {
+      "Ibuprofen": {
+        "severity": "moderate",
+        "description": "Ibuprofen blunts aspirin's cardioprotective antiplatelet effect."
+      },
+      "Heparin": {
+        "severity": "moderate",
+        "description": "Additive bleeding risk; intended in ACS but monitor."
+      },
+      "Ticagrelor": {
+        "severity": "moderate",
+        "description": "Dual antiplatelet therapy \u2014 intended in ACS; bleeding risk."
+      },
+      "Warfarin": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      },
+      "Methotrexate": {
+        "severity": "major",
+        "description": "High-priority interaction (ONC/CredibleMeds consensus).",
+        "source": "onc"
+      }
+    },
+    "Levofloxacin": {
+      "Ondansetron": {
+        "severity": "moderate",
+        "description": "Additive QT prolongation."
+      }
+    }
+  },
+  "allergy_classes": {
+    "penicillin": [
+      "Amoxicillin",
+      "Amoxicillin-Clavulanate",
+      "Ampicillin",
+      "Dicloxacillin",
+      "Piperacillin-Tazobactam",
+      "Penicillin G"
+    ],
+    "cephalosporin": [
+      "Cephalexin",
+      "Cefazolin",
+      "Cefoxitin",
+      "Ceftriaxone"
+    ],
+    "sulfa": [
+      "Trimethoprim-Sulfamethoxazole",
+      "Glyburide"
+    ],
+    "macrolide": [
+      "Azithromycin"
+    ],
+    "tetracycline": [
+      "Doxycycline"
+    ],
+    "fluoroquinolone": [
+      "Levofloxacin",
+      "Ciprofloxacin"
+    ],
+    "nsaid": [
+      "Aspirin",
+      "Ibuprofen",
+      "Naproxen",
+      "Diclofenac"
+    ],
+    "aminoglycoside": [
+      "Gentamicin"
+    ],
+    "opioid": [
+      "Morphine"
+    ]
+  },
+  "cross_reactivity": {
+    "penicillin": {
+      "cephalosporin": {
+        "severity": "caution",
+        "description": "~1-3% cross-reactivity between penicillins and cephalosporins; use with caution or choose an alternative class."
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets & local config
+.env
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data caches (generated artifacts, not source-of-truth seed data)
+data/cache/
+*.qdrant
+
+# AI-generated, unreviewed cases (runtime cache — not committed)
+data/generated/
+
+# Kaggle submission drafts / assets (writeup, cover image, video) — not committed
+submission/
+
+# Local editor / preview config — not for the repo
+.claude/
+
+# Streamlit
+.streamlit/secrets.toml

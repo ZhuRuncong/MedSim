@@ -1,0 +1,38 @@
+# ---- Core runtime (required to run the app + tests locally) ----
+streamlit>=1.33
+pydantic>=2.6
+pandas>=2.0
+numpy>=1.26
+python-dotenv>=1.0
+
+# ---- API layer (FastMCP tool gateway) ----
+fastapi>=0.110
+uvicorn>=0.29
+requests>=2.31
+
+# ---- Agent orchestration (LangGraph is the live runtime) ----
+# When installed, actions flow through a compiled LangGraph StateGraph. A built-in
+# router is kept as an exactly-equivalent fallback (opt out: MEDSIM_USE_LANGGRAPH=0).
+langgraph>=0.2
+
+# ---- Optional: vector search / embeddings ----
+# qdrant-client>=1.8
+# sentence-transformers>=2.6
+
+# ---- Optional: AI case generation (install ONE provider) ----
+# The generate-then-verify case generator needs one LLM provider. It is fully
+# gated: without a key the feature is disabled and the rest of the app is
+# unaffected.
+# google-genai>=1.0             # Gemini  (set GOOGLE_API_KEY)
+# anthropic>=0.39               # Claude  (set ANTHROPIC_API_KEY)
+
+# ---- Optional: external knowledge sources ----
+# tavily-python>=0.3
+# pymed>=0.8.9
+# semanticscholar>=0.8
+
+# ---- Optional: persistence ----
+# redis>=5.0
+
+# ---- Dev / test ----
+pytest>=8.0
