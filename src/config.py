@@ -103,6 +103,64 @@ PHYSICAL_EXAMS = [
     "Pelvic exam",
     "Digital rectal exam",
     "Breast exam",
+    "Assess for meningeal signs",
+    "Murphy's sign",
+    "Assess for rebound tenderness / guarding",
+    "Costovertebral angle tenderness",
+    "Straight-leg raise",
+    "Assess for asterixis",
+    "Genitourinary / testicular exam",
+]
+
+# Procedures & interventions a student can request via the emergency_surgery
+# tool. Many cases are managed medically (indicated_surgeries = []); the generator
+# picks a case's genuinely-indicated procedures from this list, and the whole list
+# is offered to the student so the choice is a real decision, not a give-away.
+PROCEDURES = [
+    # Cardiac / resuscitation
+    "Percutaneous Coronary Intervention (PCI)",
+    "Thrombolysis (tPA)",
+    "Synchronized Cardioversion",
+    "Defibrillation",
+    "Transcutaneous Pacing",
+    "Pericardiocentesis",
+    # Airway / pulmonary
+    "Endotracheal Intubation",
+    "Tube Thoracostomy (Chest Tube)",
+    "Needle Thoracostomy (Decompression)",
+    "Thoracentesis",
+    # Gastrointestinal
+    "Upper Endoscopy (EGD)",
+    "Colonoscopy",
+    "ERCP",
+    "Paracentesis",
+    "Nasogastric Decompression",
+    # Neurology
+    "Lumbar Puncture",
+    "Mechanical Thrombectomy",
+    # Renal / vascular / bedside
+    "Hemodialysis",
+    "Central Venous Catheter Placement",
+    "Incision & Drainage",
+    "Fracture Reduction & Splinting",
+    "Urinary Catheterization",
+    # Obstetrics & gynecology
+    "Cesarean Section",
+    "Salpingectomy",
+    "Salpingostomy",
+    "Dilation & Curettage (D&C)",
+    # Operative surgery
+    "Appendectomy",
+    "Cholecystectomy",
+    "Hernia Repair",
+    "Bowel Resection",
+    "Exploratory Laparotomy",
+    "Laparoscopy",
+    "Craniotomy",
+    "Thoracotomy",
+    "Splenectomy",
+    "Tracheostomy",
+    "Amputation",
 ]
 
 # --------------------------------------------------------------------------- #

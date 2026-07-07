@@ -276,6 +276,10 @@ def _auto_repair(d: dict) -> dict:
             tests.append(panel)
     d["appropriate_tests"] = tests
 
+    # Keep only procedures the engine offers (indicated_surgeries is the answer key).
+    procedures = set(config.PROCEDURES)
+    d["indicated_surgeries"] = [s for s in d.get("indicated_surgeries", []) if s in procedures]
+
     # Clamp severity; keep only executable safety gates referencing known vocab.
     try:
         d["severity"] = min(3, max(1, int(d.get("severity", 2))))
@@ -307,10 +311,13 @@ def _vocab_block() -> str:
     tests = ", ".join(data_loader.orderable_tests())
     exams = ", ".join(config.PHYSICAL_EXAMS)
     components = ", ".join(sorted(data_loader.all_components()))
+    procedures = ", ".join(config.PROCEDURES)
     return (
         f"ALLOWED DRUGS (first_line_drugs / reasonable_drugs / contraindicated_drugs "
         f"must be chosen ONLY from this list):\n{drugs}\n\n"
         f"ALLOWED TESTS (appropriate_tests must be from this list):\n{tests}\n\n"
+        f"ALLOWED PROCEDURES (indicated_surgeries must be chosen ONLY from this list; "
+        f"use [] when the condition is managed medically):\n{procedures}\n\n"
         f"ALLOWED PHYSICAL EXAMS (exam_findings keys must be from this list):\n{exams}\n\n"
         f"LAB COMPONENTS you may use as numeric lab_deviations keys (each maps to a panel):\n{components}\n\n"
         f"For qualitative/imaging lab_deviations, the key must be one of the ALLOWED TESTS above "
@@ -401,7 +408,12 @@ def _gen_user(specialty: str, difficulty: Optional[int],
         "- 'first_line_drugs' MUST be the guideline first-line treatment(s) for this exact condition.",
         "- 'contraindicated_drugs' MUST be genuinely harmful/contraindicated in this condition "
         "(not merely 'not indicated'); [] if none apply.",
-        "- 'appropriate_tests' are the tests a clinician would actually order in the work-up.",
+        "- 'appropriate_tests' are the tests a clinician would actually order in the work-up. "
+        "Always include the diagnostic gold-standard/confirmatory test for this condition.",
+        "- 'indicated_surgeries' list any procedure/intervention genuinely indicated for THIS "
+        "condition, chosen ONLY from ALLOWED PROCEDURES (e.g. 'Percutaneous Coronary Intervention "
+        "(PCI)' for STEMI, 'Appendectomy' for appendicitis, 'Lumbar Puncture' for suspected "
+        "meningitis, 'Upper Endoscopy (EGD)' for an upper GI bleed). Use [] if managed medically.",
         "- 'lab_deviations' encode this disease's characteristic abnormal results.",
         "- IMPORTANT: 'exam_findings' and 'lab_deviations' findings must describe the objective "
         "sign or result ONLY and must NOT name the diagnosis or its abbreviation (the student is "

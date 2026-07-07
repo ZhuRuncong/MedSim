@@ -29,7 +29,7 @@ def evaluate_surgery(
         outcome = (
             "Procedure indicated and performed successfully; the patient stabilises."
             if success else
-            "Procedure was indicated but complicated by a peri-operative event; the patient recovers with support."
+            "Procedure was indicated but complicated by a peri-procedural event; the patient recovers with support."
         )
         # Rationale must not name the diagnosis nor reveal which procedure *was*
         # indicated — both would give the case away mid-work-up.
@@ -39,7 +39,7 @@ def evaluate_surgery(
         success = False
         if indicated_list:
             outcome = (f"{procedure} is not indicated for this presentation. "
-                       f"An unnecessary operation exposes the patient to avoidable surgical risk.")
+                       f"An unnecessary invasive procedure exposes the patient to avoidable risk.")
         else:
             outcome = (f"This presentation is managed medically. {procedure} is not indicated "
                        f"and would be harmful.")

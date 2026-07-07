@@ -11,7 +11,7 @@ from typing import List, Optional
 
 import numpy as np
 
-from . import data_loader, trace as trace_mod
+from . import config, data_loader, trace as trace_mod
 from .agents import patient, supervisor
 from .config import level_for_points
 from .state import GameState, Message
@@ -30,19 +30,14 @@ def available_drugs() -> List[str]:
     return data_loader.all_drug_names()
 
 
-_DISTRACTOR_PROCEDURES = [
-    "Exploratory Laparotomy", "Craniotomy", "Thoracotomy", "Amputation",
-    "Splenectomy", "Tracheostomy",
-]
-
-
 def available_procedures() -> List[str]:
-    """All indicated procedures across the catalog + distractors.
+    """The full procedure catalog (config.PROCEDURES) plus anything a registered
+    case marks indicated.
 
     Deliberately not filtered to the current disease so the choice is a real
     clinical decision rather than a give-away.
     """
-    procs = set(_DISTRACTOR_PROCEDURES)
+    procs = set(config.PROCEDURES)
     for d in data_loader.diseases():
         procs.update(d.get("indicated_surgeries", []))
     return sorted(procs)

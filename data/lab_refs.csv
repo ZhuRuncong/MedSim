@@ -35,3 +35,27 @@ Lipid Panel,Total Cholesterol,0,200,mg/dL
 Lipid Panel,LDL,0,100,mg/dL
 Lipid Panel,HDL,40,200,mg/dL
 Lipid Panel,Triglycerides,0,150,mg/dL
+LFT,GGT,8,61,U/L
+LFT,Albumin,3.5,5.0,g/dL
+Amylase,Amylase,30,110,U/L
+Coagulation,PT,11,13.5,s
+Coagulation,INR,0.8,1.1,
+Coagulation,aPTT,25,35,s
+Fibrinogen,Fibrinogen,200,400,mg/dL
+CK,Creatine Kinase,30,200,U/L
+CK-MB,CK-MB,0,5,ng/mL
+LDH,LDH,140,280,U/L
+Calcium/Phosphate,Calcium,8.5,10.5,mg/dL
+Calcium/Phosphate,Phosphate,2.5,4.5,mg/dL
+Thyroid Panel,TSH,0.4,4.0,mIU/L
+Thyroid Panel,Free T4,0.8,1.8,ng/dL
+Ammonia,Ammonia,15,45,mcg/dL
+Procalcitonin,Procalcitonin,0,0.5,ng/mL
+Ferritin,Ferritin,20,250,ng/mL
+B12/Folate,Vitamin B12,200,900,pg/mL
+B12/Folate,Folate,3,17,ng/mL
+Cortisol,AM Cortisol,5,25,mcg/dL
+Reticulocyte Count,Reticulocytes,0.5,2.5,%
+Acetaminophen Level,Acetaminophen,0,20,mcg/mL
+Salicylate Level,Salicylate,0,30,mg/dL
+Ethanol Level,Ethanol,0,10,mg/dL

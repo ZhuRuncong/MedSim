@@ -360,7 +360,7 @@ with left:
 with right:
     disabled = state.status != "active"
     tab_hx, tab_dx, tab_rx, tab_kb = st.tabs(
-        ["History & Exam", "Tests", "Medications & Surgery", "Knowledge & Diagnosis"])
+        ["History & Exam", "Tests", "Medications & Procedures", "Knowledge & Diagnosis"])
 
     with tab_hx:
         with st.form("hx_form", clear_on_submit=True):
@@ -387,8 +387,8 @@ with right:
         if st.button("Prescribe", disabled=disabled or not drug):
             _do({"type": "prescribe_drug", "payload": drug})
             st.rerun()
-        proc = st.selectbox("Emergency surgery", [""] + engine.available_procedures())
-        if st.button("Request surgery", disabled=disabled or not proc):
+        proc = st.selectbox("Procedure / surgery", [""] + engine.available_procedures())
+        if st.button("Perform procedure", disabled=disabled or not proc):
             _do({"type": "request_surgery", "payload": proc})
             st.rerun()
 

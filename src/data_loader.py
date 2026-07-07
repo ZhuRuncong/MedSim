@@ -36,6 +36,28 @@ QUALITATIVE_TESTS = [
     "Blood Type & Screen",
     "Urine Protein/Creatinine Ratio",
     "Pulse Oximetry",
+    # Imaging
+    "CT Head",
+    "CT Chest (PE protocol)",
+    "CT Angiography",
+    "MRI Brain",
+    "MRI Abdomen",
+    "Echocardiogram",
+    "Abdominal X-ray",
+    "Lower Extremity Doppler Ultrasound",
+    "Renal Ultrasound",
+    "RUQ Ultrasound",
+    "V/Q Scan",
+    # Specimens / other
+    "Lumbar Puncture (CSF Analysis)",
+    "Stool Studies",
+    "Fecal Occult Blood",
+    "Influenza PCR",
+    "COVID-19 PCR",
+    "Respiratory Viral Panel",
+    "Peripheral Blood Smear",
+    "EEG",
+    "Throat Culture",
 ]
 
 

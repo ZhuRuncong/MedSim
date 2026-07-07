@@ -45,7 +45,7 @@ generate-then-verify pipeline, so an **LLM API key is required** to run the app.
   ideal, with cited teaching points.
 - **Agent-trajectory observability.** Every action is an OpenTelemetry-shaped
   span; the app shows a live routing graph + trajectory table, exportable as JSON.
-- **131 passing tests** + a prior **adversarial multi-agent code review** (11 bugs
+- **146 passing tests** + a prior **adversarial multi-agent code review** (11 bugs
   found & fixed).
 
 ---
@@ -274,7 +274,7 @@ citation verification; all six agents + Debrief over LangGraph (with a
 parity-tested router fallback); five tools + FastAPI gateway; grounded LLM patient
 & RAG knowledge; deterministic guideline-cited scoring with severity weighting,
 safety gates, and metacognition; end-of-case debrief; trajectory observability;
-the Streamlit UI; and a **131-test suite** with CI.
+the Streamlit UI; and a **146-test suite** with CI.
 
 **Optional / stubbed** (need credentials or licensed data): Qdrant embedding
 upload (wired in `initialize_data.py`, runs when configured), Tavily knowledge
